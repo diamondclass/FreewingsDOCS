@@ -1,4 +1,4 @@
-# Documentación del Bot Freewings
+# Documentación en Español
 
 ## Tabla de Contenidos
 1. [Comenzando](#comenzando)
@@ -251,12 +251,3 @@ Gestionar filtro de malas palabras
 #### `/setup welcome`
 Configurar sistema de bienvenida (Solo Dashboard)
 - Redirige al dashboard web para configuración
-
----
-
-## Soporte
-
-- **Dashboard:** [https://www.freewingsbot.com](https://www.freewingsbot.com)
-- **Comunidad de Desarrolladores:** [Discord de NearDevs](https://discord.gg/Sp9GTrmcQG)
-- **Desarrollador Principal:** @diamondclass
-- **Copyright:** Freewings © 2025
