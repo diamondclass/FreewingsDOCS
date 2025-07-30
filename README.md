@@ -68,7 +68,7 @@ Configure your server with `/setup` commands:
 
 For complete documentation with detailed command descriptions, usage examples, and configuration guides, see:
 
-**[📚 DOCUMENTATION.md](./DOCUMENTATION.md)**
+**[📚 DOCUMENTATION.md](./Docs_EN.md)**
 
 The full documentation includes:
 - Detailed command descriptions and usage examples
