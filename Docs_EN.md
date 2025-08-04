@@ -1,20 +1,19 @@
-# Freewings Bot Documentation
+# Freewings Bot - English Documentation
 
-## English Documentation
-
-### Table of Contents
+## Table of Contents
 1. [Getting Started](#getting-started)
 2. [Command Categories](#command-categories)
 3. [Public Commands](#public-commands)
 4. [Security Systems](#security-systems)
 5. [Setup Commands](#setup-commands)
-6. [Support](#support)
+6. [Recent Updates](#recent-updates)
+7. [Support](#support)
 
 ---
 
 ## Getting Started
 
-Freewings is a comprehensive Discord bot developed by [NearDevs](https://discord.gg/Sp9GTrmcQG) and **@diamondclass**. The bot provides security, moderation, community, entertainment, and utility features for Discord servers.
+Freewings is a comprehensive Discord bot developed by [Citymoon Dynamics](https://discord.gg/Sp9GTrmcQG) and **@diamondclass**. The bot provides security, moderation, community, entertainment, and utility features for Discord servers.
 
 ### Quick Start
 1. Use `/empezar` to explore all available features
@@ -25,10 +24,10 @@ Freewings is a comprehensive Discord bot developed by [NearDevs](https://discord
 
 ## Command Categories
 
-### 🏠 Home (Hogar)
+### 🏠 Home
 - **`/empezar`** - Interactive guide to explore all bot features
 
-### 🫂 Community (Comunidad)
+### 🫂 Community
 - **`/user`** - User information and management
 - **`/server`** - Server information and statistics
 - **`/channel`** - Channel information and management
@@ -37,236 +36,236 @@ Freewings is a comprehensive Discord bot developed by [NearDevs](https://discord
 - **`/seguir`** - Follow social media accounts for notifications
 - **`/sugerir`** - Submit suggestions to the configured channel
 
-### 🎮 Mini-games (Minijuegos)
+### 🎮 Mini-games
 - **`/ahorcado`** - Hangman game with multiple difficulty levels
 - **`/chess`** - Chess game
 - **`/osint`** - OSINT (Open Source Intelligence) game
 
-### 🙈 Fun (Diversión)
+### 🙈 Fun
 - **`/8ball`** - Magic 8-ball responses
 - **`/abrazo`** - Hug someone
 - **`/golpe`** - Playful hit action
 - **`/amor`** - Love compatibility
 - **`/beso`** - Kiss someone
-- **`/giveaway`** - Create giveaways
 - **`/howgay`** - Fun gay percentage calculator
+- **`/giveaway`** - Create and manage giveaways
 
-### 🔩 Setup
-- **`/setup`** - Configure server features (Administrator only)
+### 🎵 Music
+- **`/play`** - Play music from various sources
+- **`/pause`** - Pause current playback
+- **`/resume`** - Resume paused playback
+- **`/stop`** - Stop playback and clear queue
+- **`/skip`** - Skip current song
+- **`/queue`** - Display current queue
+- **`/nowplaying`** - Show currently playing song
+- **`/volume`** - Adjust playback volume
+- **`/shuffle`** - Shuffle the queue
+- **`/loop`** - Toggle loop mode
+
+### 🛡️ Security
+- **`/antiraid`** - Anti-raid protection system
+- **`/antispam`** - Anti-spam protection
+- **`/antilink`** - Link filtering system
+- **`/captcha`** - CAPTCHA verification system
+- **`/automod`** - Automatic moderation
+- **`/badwords`** - Bad words filter
+- **`/whitelist`** - Whitelist management
+- **`/blacklist`** - Blacklist management
+- **`/verification`** - User verification system
+- **`/autorole`** - Automatic role assignment
+- **`/welcome`** - Welcome message system
+- **`/goodbye`** - Goodbye message system
+- **`/logs`** - Server logging system
+- **`/backup`** - Server backup and restore
+
+### 🔨 Moderation
+- **`/ban`** - Ban users
+- **`/unban`** - Unban users
+- **`/kick`** - Kick users
+- **`/timeout`** - Timeout users
+- **`/warn`** - Warn users
+- **`/clear`** - Clear messages
+
+### 🎫 Tickets
+- **`/ticket create`** - Create a new ticket
+- **`/ticket claim`** - Claim an existing ticket
+- **`/ticket rename [name]`** - Rename the current ticket
+- **`/ticket adduser [user]`** - Add user to ticket
+- **`/ticket removeuser [user]`** - Remove user from ticket
+- **`/ticket done`** - Close the ticket
+- **`/ticket setup`** - Interactive ticket system configuration
+- **`/ticket updatepanel`** - Update ticket panel
+- **`/ticket setlimit [limit]`** - Set ticket limit per user
+
+### ⚙️ Setup
+- **`/setup`** - Main setup command with various subcommands for server configuration
+
+### 👥 Staff
+- **`/staff`** - Staff management commands (restricted access)
 
 ---
 
 ## Public Commands
 
-### `/empezar` - Getting Started
-**Description:** Interactive guide to explore all Freewings features
-**Usage:** `/empezar`
-**Features:**
-- Interactive menu system
-- Category-based command exploration
-- Real-time bot statistics
-- Direct links to dashboard
+### Community Commands
 
-### `/user` - User Information
-**Description:** Comprehensive user information and management
-**Subcommands:**
-- **`info`** - Complete user information including badges, join date, roles
-- **`avatar`** - Display user's avatar in high resolution
-- **`banner`** - Show user's banner (if available)
-- **`roles`** - List all user roles in the server
-- **`permissions`** - Display user's key permissions
+#### `/user [user]`
+Display detailed user information
+- User profile and statistics
+- Join dates and activity
+- Roles and permissions
 
-**Usage Examples:**
-```
-/user info @username
-/user avatar
-/user banner @username
-/user roles @username
-/user permissions @username
-```
+#### `/server`
+Display server information and statistics
+- Member count and online status
+- Server creation date
+- Boost level and features
 
-### `/server` - Server Information
-**Description:** Server statistics and information
-**Subcommands:**
-- **`info`** - General server information
-- **`stats`** - Detailed server statistics
-- **`icon`** - Server icon
-- **`banner`** - Server banner
-- **`boosts`** - Boost information
+#### `/channel [channel]`
+Display channel information
+- Channel type and permissions
+- Creation date and statistics
+- Member access information
 
-### `/channel` - Channel Management
-**Description:** Channel information and management tools
-**Subcommands:**
-- **`info`** - Complete channel information
-- **`permissions`** - Channel permissions overview
-- **`roles`** - Roles with access to the channel
-- **`nuke`** - Clear all messages (Administrator only)
+#### `/bot`
+Display bot information and statistics
+- Uptime and performance
+- Server count and user count
+- Version and features
 
-### `/bot` - Bot Information
-**Description:** Technical information about Freewings
-**Subcommands:**
-- **`info`** - General bot information including uptime, latency, server count
-- **`icon`** - Bot's avatar
+#### `/traducir [text] [target_language]`
+Translate text using Google Translate
+- Supports multiple languages
+- Auto-detection of source language
+- High-quality translations
 
-### `/traducir` - Translation
-**Description:** Translate text using Google Translate
-**Usage:** `/traducir`
-**Features:**
-- Interactive modal interface
-- Support for multiple languages (en, fr, de, it, etc.)
-- Instant translation results
-- Error handling for invalid languages
+### Entertainment Commands
 
-### `/seguir` - Social Media Notifications
-**Description:** Follow social media accounts for automatic notifications
-**Supported Platforms:**
-- YouTube channels
-- Twitter accounts
-- Twitch streams
-- Kick streams
-**Features:**
-- Automatic notifications in chosen channel
-- Real-time updates
-- Multiple platform support
+#### `/8ball [question]`
+Get mystical answers to your questions
+- Random responses
+- Fun and entertaining
+- Classic magic 8-ball experience
 
-### `/sugerir` - Suggestions
-**Description:** Submit suggestions to the configured suggestions channel
-**Features:**
-- Automatic thread creation for discussion
-- Validation buttons for administrators
-- Organized suggestion management
+#### `/ahorcado [difficulty]`
+Play hangman game
+- Multiple difficulty levels
+- Word categories
+- Interactive gameplay
 
-### `/ahorcado` - Hangman Game
-**Description:** Classic hangman game with extensive word database
-**Difficulty Levels:**
-- 🟢 **Easy** - Up to 6 letters
-- 🟡 **Medium** - 7-10 letters
-- 🔴 **Hard** - More than 10 letters
-- 🎲 **Random** - Any difficulty
-
-**Features:**
-- 8 categories: Technology, Programming, Science, Nature, Animals, Sports, Culture, Geography, Food
-- Interactive alphabet display
-- Statistics tracking (precision, efficiency, time)
-- Word guessing and letter guessing
-- Visual hangman progression
-
-**Usage:** `/ahorcado [difficulty]`
-
-### `/chess` - Chess Game
-**Description:** Play chess with other users
-**Features:**
+#### `/chess [opponent]`
+Play chess with other users
 - Full chess implementation
 - Turn-based gameplay
 - Move validation
 
-### `/osint` - OSINT Game
-**Description:** Open Source Intelligence investigation game
-**Features:**
-- Investigation challenges
-- Educational content about OSINT techniques
+#### `/osint [difficulty]`
+OSINT (Open Source Intelligence) game
+- Educational and fun
+- Multiple difficulty levels
+- Learn investigation techniques
 
-### `/8ball` - Magic 8-Ball
-**Description:** Ask the magic 8-ball a question
-**Usage:** `/8ball [question]`
-**Features:**
-- 20 different responses in Spanish
-- Random answer generation
-- Fun interaction for decision making
+### Music Commands
 
-### Fun Commands
-- **`/abrazo [user]`** - Send a hug to someone
-- **`/golpe [user]`** - Playful hit action
-- **`/amor [user1] [user2]`** - Calculate love compatibility
-- **`/beso [user]`** - Send a kiss to someone
-- **`/howgay [user]`** - Fun gay percentage calculator
-- **`/giveaway`** - Create and manage giveaways
+#### `/play [song/url]`
+Play music from various sources
+- YouTube, Spotify, SoundCloud support
+- Queue management
+- High-quality audio
+
+#### `/nowplaying`
+Display currently playing song
+- Song information and progress
+- Thumbnail and duration
+- Requester information
+
+#### `/queue`
+Display current music queue
+- Song list with durations
+- Queue position indicators
+- Total queue time
 
 ---
 
 ## Security Systems
 
-Freewings includes comprehensive security features (configured via `/setup` or dashboard):
+### Anti-Raid Protection
+Comprehensive protection against server raids
+- Mass join detection
+- Automatic moderation actions
+- Configurable thresholds
 
-### Anti-Spam Systems
-- **Anti-ban protection** - Prevents mass banning
-- **Anti-bot protection** - Blocks suspicious bot additions
-- **Anti-channel spam** - Prevents channel creation/deletion spam
-- **Anti-role spam** - Protects against role manipulation
-- **Anti-webhook spam** - Prevents webhook abuse
-- **Anti-kick protection** - Blocks mass kicking
-- **Anti-NSFW** - Content filtering
-- **Anti-links** - Link filtering and protection
-- **Ghost ping detection** - Detects and logs ghost pings
+### Anti-Spam System
+Advanced spam detection and prevention
+- Message frequency analysis
+- Duplicate message detection
+- Automatic punishments
 
-### Monitoring Systems
-- **Audit log permissions** - Track permission changes
-- **Owner alerts** - Notify server owners of suspicious activity
-- **Mass role detection** - Monitor bulk role changes
-- **Client app monitoring** - Track application usage
+### CAPTCHA Verification
+Human verification system
+- Image-based challenges
+- Automatic role assignment
+- Bot detection prevention
+
+### Whitelist/Blacklist Management
+User and role access control
+- Whitelist for trusted users
+- Blacklist for problematic users
+- Flexible permission system
 
 ---
 
 ## Setup Commands
 
-### `/setup` - Server Configuration
-**Required Permission:** Administrator
+### `/setup antiraid`
+Configure anti-raid protection
+- **`activar`** - Enable anti-raid system
+- **`desactivar`** - Disable anti-raid system
+- **`configurar`** - Interactive configuration
 
-**Subcommands:**
+### `/setup antispam`
+Configure anti-spam protection
+- **`activar`** - Enable anti-spam system
+- **`desactivar`** - Disable anti-spam system
+- **`configurar`** - Set spam thresholds
 
-#### `/setup autoroles`
-Configure automatic role assignment for new members
-- **`agregar [role]`** - Add role to auto-assign list
-- **`eliminar [role]`** - Remove role from auto-assign list
-- **`listar`** - List all configured auto-roles
+### `/setup captcha`
+Configure CAPTCHA verification
+- **`activar [channel]`** - Enable CAPTCHA in specified channel
+- **`desactivar`** - Disable CAPTCHA system
 
-#### `/setup logs`
-Configure server logging system
-- **`activar [channel]`** - Enable logs in specified channel
-- **`desactivar`** - Disable logging system
-- Interactive event selection (channel events, role events, member events, message events, webhook events)
+### `/setup logs`
+Configure server logging
+- **`[channel]`** - Set logging channel
+- Comprehensive event logging
+- Moderation action tracking
 
-#### `/setup sugerencias`
-Configure suggestions system
-- **`[channel]`** - Set channel for suggestions
+### `/setup welcome`
+Configure welcome system
+- Redirects to web dashboard
+- Custom messages and embeds
+- Role assignment options
 
-#### `/setup reactionroles`
-Create reaction role systems
-- Interactive embed creation
-- Custom title, description, and color
-- Role assignment via reactions
-
-#### `/setup whitelist`
-Manage authorized users and roles
-- **`add user/role [target]`** - Add to whitelist (Owner only)
-- **`remove user/role [target]`** - Remove from whitelist (Owner only)
-- **`list user/role [page]`** - List whitelisted items
-
-#### `/setup badwords`
-Manage bad words filter
-- **`activar`** - Enable bad words filter
-- **`desactivar`** - Disable bad words filter
-- **`agregar [word]`** - Add word to blacklist
-- **`quitar [word]`** - Remove word from blacklist
-- **`listar`** - List all blacklisted words
-
-#### `/setup welcome`
-Configure welcome system (Dashboard only)
-- Redirects to web dashboard for configuration
-
----
+### `/setup suggestions`
+Configure suggestion system
+- **`[channel]`** - Set suggestions channel
+- Automatic reaction system
+- Community feedback collection
 
 ## Support
 
 - **Dashboard:** [https://www.freewingsbot.com](https://www.freewingsbot.com)
-- **Developer Community:** [NearDevs Discord](https://discord.gg/Sp9GTrmcQG)
-- **Main Developer:** @diamondclass
-- **Copyright:** Freewings © 2025
+- **Support Server:** [https://discord.gg/Sp9GTrmcQG](https://discord.gg/Sp9GTrmcQG)
+- **Developer:** @diamondclass
+- **Organization:** Citymoon Dynamics
 
+### Getting Help
+1. Use `/empezar` for interactive help
+2. Visit our support server for community assistance
+3. Check the dashboard for detailed configuration guides
+4. Contact the development team for technical issues
 
-## Soporte
+---
 
-- **Dashboard:** [https://www.freewingsbot.com](https://www.freewingsbot.com)
-- **Comunidad de Desarrolladores:** [Discord de NearDevs](https://discord.gg/Sp9GTrmcQG)
-- **Desarrollador Principal:** @diamondclass
-- **Copyright:** Freewings © 2025
+*Freewings Bot - Comprehensive Discord Server Management*
+*Developed with ❤️ by Citymoon Dynamics and @diamondclass*
