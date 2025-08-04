@@ -6,8 +6,7 @@
 3. [Öffentliche Befehle](#öffentliche-befehle)
 4. [Sicherheitssysteme](#sicherheitssysteme)
 5. [Setup-Befehle](#setup-befehle)
-6. [Neueste Updates](#neueste-updates)
-7. [Support](#support)
+6. [Support](#support)
 
 ---
 
@@ -61,30 +60,32 @@ Freewings ist ein umfassender Discord-Bot, entwickelt von [Citymoon Dynamics](ht
 - **`/volume`** - Wiedergabelautstärke anpassen
 - **`/shuffle`** - Warteschlange mischen
 - **`/loop`** - Loop-Modus umschalten
+- **`/clear`** - Wiedergabewarteschlange löschen
+- **`/remove`** - Bestimmten Song aus der Warteschlange entfernen
 
 ### 🛡️ Sicherheit
-- **`/antiraid`** - Anti-Raid-Schutzsystem
-- **`/antispam`** - Anti-Spam-Schutz
-- **`/antilink`** - Link-Filtersystem
-- **`/captcha`** - CAPTCHA-Verifizierungssystem
-- **`/automod`** - Automatische Moderation
-- **`/badwords`** - Schimpfwortfilter
-- **`/whitelist`** - Whitelist-Verwaltung
-- **`/blacklist`** - Blacklist-Verwaltung
-- **`/verification`** - Benutzerverifizierungssystem
-- **`/autorole`** - Automatische Rollenzuweisung
-- **`/welcome`** - Willkommensnachrichtensystem
-- **`/goodbye`** - Abschiedsnachrichtensystem
-- **`/logs`** - Server-Protokollierungssystem
-- **`/backup`** - Server-Backup und -Wiederherstellung
+- **`/antilinks`** - Anti-Links-Schutzsystem
+- **`/antibot`** - Schutz vor nicht autorisierten Bots
+- **`/antiban`** - Schutz vor Massen-Banns
+- **`/antikick`** - Schutz vor Massen-Kicks
+- **`/antichannels`** - Schutz vor Massen-Kanalerstellung
+- **`/antirole`** - Schutz vor Massen-Rollenerstellung
+- **`/antiwebhookcreate`** - Schutz vor Webhook-Erstellung
+- **`/antiwebhookspam`** - Schutz vor Webhook-Spam
+- **`/antinsfw`** - NSFW-Inhaltsfilter
+- **`/anticlientapp`** - Schutz vor modifizierten Client-Anwendungen
+- **`/ghostping`** - Ghost-Ping-Erkennung
+- **`/massrole`** - Schutz vor Massen-Rollenzuweisung
+- **`/estado`** - Status aller Sicherheitssysteme
+- **`/owneralerts`** - Owner-Alert-System
 
 ### 🔨 Moderation
 - **`/ban`** - Benutzer bannen
-- **`/unban`** - Benutzer entbannen
 - **`/kick`** - Benutzer kicken
 - **`/timeout`** - Benutzer timeout geben
-- **`/warn`** - Benutzer verwarnen
-- **`/clear`** - Nachrichten löschen
+- **`/purge`** - Nachrichten löschen
+- **`/historial`** - Sanktionsverlauf anzeigen
+- **`/notas`** - Moderationsnotizen-System
 
 ### 🎫 Tickets
 - **`/ticket create`** - Ein neues Ticket erstellen
@@ -100,9 +101,6 @@ Freewings ist ein umfassender Discord-Bot, entwickelt von [Citymoon Dynamics](ht
 ### ⚙️ Setup
 - **`/setup`** - Haupt-Setup-Befehl mit verschiedenen Unterbefehlen für Serverkonfiguration
 
-### 👥 Staff
-- **`/staff`** - Staff-Verwaltungsbefehle (eingeschränkter Zugang)
-
 ---
 
 ## Öffentliche Befehle
@@ -111,33 +109,58 @@ Freewings ist ein umfassender Discord-Bot, entwickelt von [Citymoon Dynamics](ht
 
 #### `/user [user]`
 Detaillierte Benutzerinformationen anzeigen
-- Benutzerprofil und -statistiken
-- Beitrittsdaten und Aktivität
-- Rollen und Berechtigungen
+- **Unterbefehle:**
+  - `info` - Vollständige Benutzerinformationen
+  - `avatar` - Benutzer-Avatar
+  - `banner` - Benutzer-Banner
+  - `roles` - Benutzer-Rollen
+  - `permissions` - Benutzer-Berechtigungen
+- Enthält Badges, Aktivitätsstatus und interaktive Navigation
 
 #### `/server`
 Serverinformationen und -statistiken anzeigen
-- Mitglieder-Anzahl und Online-Status
-- Server-Erstellungsdatum
-- Boost-Level und Funktionen
+- **Unterbefehle:**
+  - `info` - Allgemeine Serverinformationen
+  - `stats` - Detaillierte Statistiken
+  - `icon` - Server-Icon
+  - `banner` - Server-Banner
+  - `boosts` - Boost-Informationen
+- Enthält Echtzeit-Statistiken und spezielle Funktionen
 
 #### `/channel [channel]`
-Kanalinformationen anzeigen
-- Kanaltyp und -berechtigungen
-- Erstellungsdatum und -statistiken
-- Mitgliederzugangs-Informationen
+Kanalinformationen und -verwaltung
+- **Unterbefehle:**
+  - `info` - Vollständige Kanalinformationen
+  - `permissions` - Kanal-Berechtigungen anzeigen
+  - `roles` - Rollen mit Kanalzugang
+  - `nuke` - Kanal vollständig bereinigen
+- ⚠️ **Nuke** erfordert Administrator-Berechtigungen und löscht ALLE Nachrichten
 
 #### `/bot`
 Bot-Informationen und -statistiken anzeigen
-- Uptime und Leistung
-- Server-Anzahl und Benutzer-Anzahl
-- Version und Funktionen
+- **Unterbefehle:**
+  - `info` - Allgemeine Bot-Informationen
+  - `icon` - Bot-Icon
+- Enthält Server- und Benutzerstatistiken, Latenz und Speichernutzung
 
 #### `/traducir [text] [target_language]`
 Text mit Google Translate übersetzen
-- Unterstützt mehrere Sprachen
+- Interaktives Modal zum Übersetzen von beliebigem Text
+- Unterstützung für mehrere Sprachen (en, fr, de, it, etc.)
 - Auto-Erkennung der Quellsprache
-- Hochwertige Übersetzungen
+- Sofortige und präzise Übersetzung
+
+#### `/seguir`
+Benachrichtigungen für neue Beiträge aktivieren
+- Folgen Sie YouTube-, Twitter-, Twitch- und Kick-Kanälen
+- Automatische Benachrichtigungen in Ihrem gewählten Kanal
+- Halten Sie Ihre Community auf dem Laufenden
+
+#### `/sugerir`
+Vorschläge an den konfigurierten Kanal senden
+- Vorschlagssystem mit Validierungsbuttons
+- Automatische Thread-Erstellung für Diskussionen
+- Moderation durch Administratoren
 
 ### Unterhaltungsbefehle
 
@@ -165,6 +188,37 @@ OSINT (Open Source Intelligence) Spiel
 - Mehrere Schwierigkeitsstufen
 - Untersuchungstechniken lernen
 
+#### `/amor [user1] [user2]`
+Liebeskompatibilität zwischen Benutzern berechnen
+- Kompatibilitätsalgorithmus
+- Spaßige und detaillierte Ergebnisse
+
+#### `/abrazo [user]`
+Jemanden umarmen
+- Benutzerdefinierte Animationen und Nachrichten
+- Spaßige soziale Interaktion
+
+#### `/beso [user]`
+Jemanden küssen
+- Benutzerdefinierte Animationen und Nachrichten
+- Spaßige soziale Interaktion
+
+#### `/golpe [user]`
+Jemanden spielerisch schlagen
+- Benutzerdefinierte Animationen und Nachrichten
+- Spaßige soziale Interaktion
+
+#### `/howgay [user]`
+Spaßiger Gay-Prozentsatz-Rechner
+- Zufällige und spaßige Ergebnisse
+- Keine beleidigende Absicht
+
+#### `/giveaway`
+Giveaways erstellen und verwalten
+- Vollständiges Giveaway-System
+- Preis- und Dauerkonfiguration
+- Automatische Gewinnerauswahl
+
 ### Musik-Befehle
 
 #### `/play [song/url]`
@@ -173,11 +227,22 @@ Musik aus verschiedenen Quellen abspielen
 - Warteschlangen-Verwaltung
 - Hochwertige Audioqualität
 
-#### `/nowplaying`
-Aktuell abgespielten Song anzeigen
-- Song-Informationen und Fortschritt
-- Thumbnail und Dauer
-- Anforderer-Informationen
+#### `/search [term]`
+Nach Songs auf YouTube suchen
+- Interaktive Ergebnisse
+- Mehrfache Songauswahl
+
+#### `/pause`
+Aktuelle Wiedergabe pausieren
+
+#### `/resume`
+Pausierte Wiedergabe fortsetzen
+
+#### `/stop`
+Wiedergabe stoppen und Warteschlange löschen
+
+#### `/skip`
+Aktuellen Song überspringen
 
 #### `/queue`
 Aktuelle Musik-Warteschlange anzeigen
@@ -185,72 +250,220 @@ Aktuelle Musik-Warteschlange anzeigen
 - Warteschlangen-Positionsanzeiger
 - Gesamte Warteschlangenzeit
 
+#### `/nowplaying`
+Aktuell abgespielten Song anzeigen
+- Song-Informationen und Fortschritt
+- Thumbnail und Dauer
+- Anforderer-Informationen
+
+#### `/volume [level]`
+Wiedergabelautstärke anpassen (0-100)
+
+#### `/shuffle`
+Warteschlange mischen
+
+#### `/loop`
+Loop-Modus umschalten
+
+#### `/clear`
+Wiedergabewarteschlange löschen
+
+#### `/remove [position]`
+Bestimmten Song aus der Warteschlange entfernen
+
 ---
 
 ## Sicherheitssysteme
 
-### Anti-Raid-Schutz
-Umfassender Schutz gegen Server-Raids
-- Massenbeittritts-Erkennung
-- Automatische Moderationsaktionen
-- Konfigurierbare Schwellenwerte
+### Anti-Links-Schutz (`/antilinks`)
+- Nur der Serverbesitzer kann konfigurieren
+- Sanktioniert automatisch Benutzer, die nicht autorisierte Links senden
+- Bestätigungssystem zum Aktivieren/Deaktivieren
 
-### Anti-Spam-System
-Erweiterte Spam-Erkennung und -Prävention
-- Nachrichtenhäufigkeits-Analyse
-- Duplikat-Nachrichten-Erkennung
-- Automatische Bestrafungen
+### Anti-Bot-Schutz (`/antibot`)
+- Erkennt und verhindert nicht autorisierten Bot-Eintritt
+- Automatische Verifikationskonfiguration
 
-### CAPTCHA-Verifizierung
-Menschliche Verifizierungssystem
-- Bildbasierte Herausforderungen
-- Automatische Rollenzuweisung
-- Bot-Erkennungs-Prävention
+### Anti-Ban-Schutz (`/antiban`)
+- Verhindert Massen-Banns von Mitgliedern
+- Automatische Alerts an den Besitzer
 
-### Whitelist/Blacklist-Verwaltung
-Benutzer- und Rollen-Zugriffskontrolle
-- Whitelist für vertrauenswürdige Benutzer
-- Blacklist für problematische Benutzer
-- Flexibles Berechtigungssystem
+### Anti-Kick-Schutz (`/antikick`)
+- Verhindert Massen-Kicks von Mitgliedern
+- Automatisches Erkennungssystem
+
+### Anti-Kanal-Schutz (`/antichannels`)
+- Verhindert Massen-Kanalerstellung
+- Schutz vor Raids
+
+### Anti-Rollen-Schutz (`/antirole`)
+- Verhindert Massen-Rollenerstellung
+- Schutz vor nicht autorisierten Änderungen
+
+### Anti-Webhook-Schutz (`/antiwebhookcreate`, `/antiwebhookspam`)
+- Verhindert nicht autorisierte Webhook-Erstellung
+- Schutz vor Webhook-Spam
+
+### NSFW-Filter (`/antinsfw`)
+- Erkennt und filtert unangemessene Inhalte
+- Automatische Konfiguration
+
+### Anti-Client-Schutz (`/anticlientapp`)
+- Erkennt modifizierte Client-Anwendungen
+- Exploit-Prävention
+
+### Ghost-Ping-Erkennung (`/ghostping`)
+- Erkennt schnell gelöschte Nachrichten
+- Prävention subtiler Belästigung
+
+### Anti-Massen-Rollen-Schutz (`/massrole`)
+- Verhindert Massen-Rollenzuweisung
+- Schutz vor nicht autorisierten Änderungen
+
+### Sicherheitsstatus (`/estado`)
+- Zeigt Status aller Sicherheitssysteme
+- Detaillierte Informationen für jeden Schutz
+
+### Owner-Alerts (`/owneralerts`)
+- Spezielles Alert-System für den Besitzer
+- Wichtige Ereignisbenachrichtigungen
 
 ---
 
 ## Setup-Befehle
 
-### `/setup antiraid`
-Anti-Raid-Schutz konfigurieren
-- **`activar`** - Anti-Raid-System aktivieren
-- **`desactivar`** - Anti-Raid-System deaktivieren
-- **`configurar`** - Interaktive Konfiguration
-
-### `/setup antispam`
-Anti-Spam-Schutz konfigurieren
-- **`activar`** - Anti-Spam-System aktivieren
-- **`desactivar`** - Anti-Spam-System deaktivieren
-- **`configurar`** - Spam-Schwellenwerte festlegen
-
-### `/setup captcha`
-CAPTCHA-Verifizierung konfigurieren
-- **`activar [channel]`** - CAPTCHA im angegebenen Kanal aktivieren
-- **`desactivar`** - CAPTCHA-System deaktivieren
+### `/setup autoroles`
+Automatische Rollen verwalten
+- **`agregar`** - Automatische Rolle hinzufügen
+- **`eliminar`** - Automatische Rolle entfernen
+- **`listar`** - Automatische Rollen auflisten
 
 ### `/setup logs`
-Server-Protokollierung konfigurieren
-- **`[channel]`** - Protokollierungs-Kanal festlegen
-- Umfassende Ereignisprotokollierung
-- Moderationsaktions-Verfolgung
+Server-Logs aktivieren oder deaktivieren
+- **`activar`** - Logging-System aktivieren
+- **`desactivar`** - Logging-System deaktivieren
+- **`[channel]`** - Kanal für Logs (optional)
+
+### `/setup sugerencias`
+Vorschlagskanal konfigurieren
+- **`[channel]`** - Kanal, in den Vorschläge gesendet werden
+
+### `/setup reactionroles`
+Reaction-Rollen-System konfigurieren
+- Interaktives Konfigurationssystem
+- Erstellung von Nachrichten mit automatischen Reaktionen
+
+### `/setup whitelist`
+Autorisierte Benutzer oder Rollen konfigurieren
+- **`add`** - Benutzer/Rolle zur Whitelist hinzufügen
+- **`remove`** - Benutzer/Rolle aus Whitelist entfernen
+- **`list`** - Benutzer/Rollen in Whitelist auflisten
+
+### `/setup badwords`
+Schimpfwort-Filtersystem konfigurieren
+- **`add`** - Wort zur Blacklist hinzufügen
+- **`remove`** - Wort aus Blacklist entfernen
+- **`list`** - Wörter in Blacklist auflisten
 
 ### `/setup welcome`
 Willkommenssystem konfigurieren
-- Weiterleitung zum Web-Dashboard
+- Leitet zum Web-Dashboard für erweiterte Konfiguration weiter
 - Benutzerdefinierte Nachrichten und Embeds
 - Rollenzuweisungsoptionen
 
-### `/setup suggestions`
-Vorschlagssystem konfigurieren
-- **`[channel]`** - Vorschlagskanal festlegen
-- Automatisches Reaktionssystem
-- Community-Feedback-Sammlung
+---
+
+## Moderationsbefehle
+
+### `/ban [user]`
+Benutzer vom Server bannen
+- Interaktives Modal für Grund, Dauer und Beweis
+- Bestätigung vor Ausführung
+- Automatische Sanktionsprotokollierung
+
+### `/kick [user]`
+Benutzer vom Server kicken
+- Interaktives Modal für Grund und Beweis
+- Bestätigung vor Ausführung
+- Automatische Sanktionsprotokollierung
+
+### `/timeout [user]`
+Benutzer temporär stummschalten
+- Dauerkonfiguration
+- Modal für Grund und Beweis
+- Bestätigung vor Ausführung
+
+### `/purge [amount]`
+Nachrichten aus Kanal löschen
+- Massen-Nachrichtenlöschung
+- Filter nach Benutzer oder Typ
+- Bestätigung vor Ausführung
+
+### `/historial [user]`
+Sanktionsverlauf anzeigen
+- Vollständige Liste der Sanktionen
+- Detaillierte Informationen für jeden Fall
+- Interaktive Navigation
+
+### `/notas`
+Moderationsnotizen-System
+- Notizen über Benutzer hinzufügen
+- Bestehende Notizen abfragen
+- Moderationsinformationsverwaltung
+
+---
+
+## Ticket-System
+
+### `/ticket create`
+Neues Ticket erstellen
+- Automatisches Kanalerstellungssystem
+- Automatische Berechtigungskonfiguration
+- Benutzerdefinierte Willkommensnachricht
+
+### `/ticket claim`
+Bestehendes Ticket beanspruchen
+- Für Moderatoren und Administratoren
+- Verantwortungszuweisung
+
+### `/ticket rename [name]`
+Aktuelles Ticket umbenennen
+- Kanalname-Änderung
+- Änderungsprotokollierung
+
+### `/ticket adduser [user]`
+Benutzer zum Ticket hinzufügen
+- Zugang für bestimmte Benutzer gewähren
+- Berechtigungsverwaltung
+
+### `/ticket removeuser [user]`
+Benutzer aus Ticket entfernen
+- Benutzerzugang widerrufen
+- Berechtigungsverwaltung
+
+### `/ticket done`
+Ticket schließen
+- Automatische Kanal-Schließung
+- Transkript-Generierung
+- Gesprächsarchivierung
+
+### `/ticket setup`
+Interaktive Ticket-System-Konfiguration
+- Geführter Konfigurationsablauf
+- Rollen- und Berechtigungskonfiguration
+- Nachrichtenanpassung
+
+### `/ticket updatepanel`
+Ticket-Panel aktualisieren
+- Automatische Hauptpanel-Aktualisierung
+- Konfigurationssynchronisation
+
+### `/ticket setlimit [limit]`
+Ticket-Limit pro Benutzer festlegen
+- Ticket-Spam-Kontrolle
+- Administrator-Konfiguration
+
+---
 
 ## Support
 
