@@ -1,484 +1,484 @@
-# Freewings Bot - English Documentation
+# Freewings Bot - Documentación en Español
 
-## Table of Contents
-1. [Getting Started](#getting-started)
-2. [Command Categories](#command-categories)
-3. [Public Commands](#public-commands)
-4. [Security Systems](#security-systems)
-5. [Setup Commands](#setup-commands)
-6. [Support](#support)
-
----
-
-## Getting Started
-
-Freewings is a comprehensive Discord bot developed by [Citymoon Dynamics](https://discord.gg/Sp9GTrmcQG) and **@diamondclass**. The bot provides security, moderation, community, entertainment, and utility features for Discord servers.
-
-### Quick Start
-1. Use `/empezar` to explore all available features
-2. Visit the [Dashboard](https://www.freewingsbot.com) for advanced configuration
-3. Use `/setup` commands to configure server features (requires Administrator permissions)
+## Tabla de Contenidos
+1. [Primeros Pasos](#primeros-pasos)
+2. [Categorías de Comandos](#categorías-de-comandos)
+3. [Comandos Públicos](#comandos-públicos)
+4. [Sistemas de Seguridad](#sistemas-de-seguridad)
+5. [Comandos de Configuración](#comandos-de-configuración)
+6. [Soporte](#soporte)
 
 ---
 
-## Command Categories
+## Primeros Pasos
 
-### 🏠 Home
-- **`/empezar`** - Interactive guide to explore all bot features
+Freewings es un bot integral de Discord desarrollado por [Citymoon Dynamics](https://discord.gg/Sp9GTrmcQG) y **@diamondclass**. El bot proporciona características de seguridad, moderación, comunidad, entretenimiento y utilidad para servidores de Discord.
 
-### 🫂 Community
-- **`/user`** - User information and management
-- **`/server`** - Server information and statistics
-- **`/channel`** - Channel information and management
-- **`/bot`** - Bot information and statistics
-- **`/traducir`** - Google Translate integration
-- **`/seguir`** - Follow social media accounts for notifications
-- **`/sugerir`** - Submit suggestions to the configured channel
+### Inicio Rápido
+1. Usa `/empezar` para explorar todas las características disponibles
+2. Visita el [Dashboard](https://www.freewingsbot.com) para configuración avanzada
+3. Usa comandos `/setup` para configurar características del servidor (requiere permisos de Administrador)
 
-### 🎮 Mini-games
-- **`/ahorcado`** - Hangman game with multiple difficulty levels
-- **`/chess`** - Chess game
-- **`/osint`** - OSINT (Open Source Intelligence) game
+---
 
-### 🙈 Fun
-- **`/8ball`** - Magic 8-ball responses
-- **`/abrazo`** - Hug someone
-- **`/golpe`** - Playful hit action
-- **`/amor`** - Love compatibility
-- **`/beso`** - Kiss someone
-- **`/howgay`** - Fun gay percentage calculator
-- **`/giveaway`** - Create and manage giveaways
+## Categorías de Comandos
 
-### 🎵 Music
-- **`/play`** - Play music from various sources
-- **`/pause`** - Pause current playback
-- **`/resume`** - Resume paused playback
-- **`/stop`** - Stop playback and clear queue
-- **`/skip`** - Skip current song
-- **`/queue`** - Display current queue
-- **`/nowplaying`** - Show currently playing song
-- **`/volume`** - Adjust playback volume
-- **`/shuffle`** - Shuffle the queue
-- **`/loop`** - Toggle loop mode
-- **`/clear`** - Clear playback queue
-- **`/remove`** - Remove specific song from queue
+### 🏠 Hogar
+- **`/empezar`** - Guía interactiva para explorar todas las características del bot
 
-### 🛡️ Security
-- **`/antilinks`** - Anti-links protection system
-- **`/antibot`** - Protection against unauthorized bots
-- **`/antiban`** - Protection against mass bans
-- **`/antikick`** - Protection against mass kicks
-- **`/antichannels`** - Protection against mass channel creation
-- **`/antirole`** - Protection against mass role creation
-- **`/antiwebhookcreate`** - Protection against webhook creation
-- **`/antiwebhookspam`** - Protection against webhook spam
-- **`/antinsfw`** - NSFW content filter
-- **`/anticlientapp`** - Protection against modified client applications
-- **`/ghostping`** - Ghost ping detection
-- **`/massrole`** - Protection against mass role assignment
-- **`/estado`** - Status of all security systems
-- **`/owneralerts`** - Owner alerts system
+### 🫂 Comunidad
+- **`/user`** - Información y gestión de usuarios
+- **`/server`** - Información y estadísticas del servidor
+- **`/channel`** - Información y gestión de canales
+- **`/bot`** - Información y estadísticas del bot
+- **`/traducir`** - Integración con Google Translate
+- **`/seguir`** - Seguir cuentas de redes sociales para notificaciones
+- **`/sugerir`** - Enviar sugerencias al canal configurado
 
-### 🔨 Moderation
-- **`/ban`** - Ban users
-- **`/kick`** - Kick users
-- **`/timeout`** - Timeout users
-- **`/purge`** - Clear messages
-- **`/historial`** - View sanction history
-- **`/notas`** - Moderation notes system
+### 🎮 Minijuegos
+- **`/ahorcado`** - Juego del ahorcado con múltiples niveles de dificultad
+- **`/chess`** - Juego de ajedrez
+- **`/osint`** - Juego de OSINT (Inteligencia de Fuentes Abiertas)
+
+### 🙈 Diversión
+- **`/8ball`** - Respuestas de la bola mágica 8
+- **`/abrazo`** - Abrazar a alguien
+- **`/golpe`** - Acción de golpe juguetón
+- **`/amor`** - Compatibilidad amorosa
+- **`/beso`** - Besar a alguien
+- **`/howgay`** - Calculadora divertida de porcentaje gay
+- **`/giveaway`** - Crear y gestionar sorteos
+
+### 🎵 Música
+- **`/play`** - Reproducir música de varias fuentes
+- **`/pause`** - Pausar reproducción actual
+- **`/resume`** - Reanudar reproducción pausada
+- **`/stop`** - Detener reproducción y limpiar cola
+- **`/skip`** - Saltar canción actual
+- **`/queue`** - Mostrar cola actual
+- **`/nowplaying`** - Mostrar canción reproduciéndose actualmente
+- **`/volume`** - Ajustar volumen de reproducción
+- **`/shuffle`** - Mezclar la cola
+- **`/loop`** - Alternar modo de bucle
+- **`/clear`** - Limpiar cola de reproducción
+- **`/remove`** - Remover canción específica de la cola
+
+### 🛡️ Seguridad
+- **`/antilinks`** - Sistema de protección anti-enlaces
+- **`/antibot`** - Protección contra bots no autorizados
+- **`/antiban`** - Protección contra baneos masivos
+- **`/antikick`** - Protección contra expulsiones masivas
+- **`/antichannels`** - Protección contra creación masiva de canales
+- **`/antirole`** - Protección contra creación masiva de roles
+- **`/antiwebhookcreate`** - Protección contra creación de webhooks
+- **`/antiwebhookspam`** - Protección contra spam de webhooks
+- **`/antinsfw`** - Filtro de contenido NSFW
+- **`/anticlientapp`** - Protección contra aplicaciones cliente modificadas
+- **`/ghostping`** - Detección de ghost pings
+- **`/massrole`** - Protección contra asignación masiva de roles
+- **`/estado`** - Estado de todos los sistemas de seguridad
+- **`/owneralerts`** - Alertas para el propietario del servidor
+
+### 🔨 Moderación
+- **`/ban`** - Banear usuarios
+- **`/kick`** - Expulsar usuarios
+- **`/timeout`** - Silenciar usuarios temporalmente
+- **`/purge`** - Limpiar mensajes
+- **`/historial`** - Ver historial de sanciones
+- **`/notas`** - Sistema de notas de moderación
 
 ### 🎫 Tickets
-- **`/ticket create`** - Create a new ticket
-- **`/ticket claim`** - Claim an existing ticket
-- **`/ticket rename [name]`** - Rename the current ticket
-- **`/ticket adduser [user]`** - Add user to ticket
-- **`/ticket removeuser [user]`** - Remove user from ticket
-- **`/ticket done`** - Close the ticket
-- **`/ticket setup`** - Interactive ticket system configuration
-- **`/ticket updatepanel`** - Update ticket panel
-- **`/ticket setlimit [limit]`** - Set ticket limit per user
+- **`/ticket create`** - Crear un nuevo ticket
+- **`/ticket claim`** - Reclamar un ticket existente
+- **`/ticket rename [nombre]`** - Renombrar el ticket actual
+- **`/ticket adduser [usuario]`** - Agregar usuario al ticket
+- **`/ticket removeuser [usuario]`** - Remover usuario del ticket
+- **`/ticket done`** - Cerrar el ticket
+- **`/ticket setup`** - Configuración interactiva del sistema de tickets
+- **`/ticket updatepanel`** - Actualizar panel de tickets
+- **`/ticket setlimit [límite]`** - Establecer límite de tickets por usuario
 
-### ⚙️ Setup
-- **`/setup`** - Main setup command with various subcommands for server configuration
+### ⚙️ Configuración
+- **`/setup`** - Comando principal de configuración con varios subcomandos para configuración del servidor
 
 ---
 
-## Public Commands
+## Comandos Públicos
 
-### Community Commands
+### Comandos de Comunidad
 
-#### `/user [user]`
-Display detailed user information
-- **Subcommands:**
-  - `info` - Complete user information
-  - `avatar` - User avatar
-  - `banner` - User banner
-  - `roles` - User roles
-  - `permissions` - User permissions
-- Includes badges, activity status, and interactive navigation
+#### `/user [usuario]`
+Mostrar información detallada del usuario
+- **Subcomandos:**
+  - `info` - Información completa del usuario
+  - `avatar` - Avatar del usuario
+  - `banner` - Banner del usuario
+  - `roles` - Roles del usuario
+  - `permissions` - Permisos del usuario
+- Incluye badges, estado de actividad y navegación interactiva
 
 #### `/server`
-Server information and statistics
-- **Subcommands:**
-  - `info` - General server information
-  - `stats` - Detailed statistics
-  - `icon` - Server icon
-  - `banner` - Server banner
-  - `boosts` - Boost information
-- Includes real-time statistics and special features
+Información y estadísticas del servidor
+- **Subcomandos:**
+  - `info` - Información general del servidor
+  - `stats` - Estadísticas detalladas
+  - `icon` - Icono del servidor
+  - `banner` - Banner del servidor
+  - `boosts` - Información de boosts
+- Incluye estadísticas en tiempo real y características especiales
 
-#### `/channel [channel]`
-Channel information and management
-- **Subcommands:**
-  - `info` - Complete channel information
-  - `permissions` - View channel permissions
-  - `roles` - Roles with channel access
-  - `nuke` - Completely clean the channel
-- ⚠️ **Nuke** requires administrator permissions and deletes ALL messages
+#### `/channel [canal]`
+Información y gestión de canales
+- **Subcomandos:**
+  - `info` - Información completa del canal
+  - `permissions` - Ver permisos del canal
+  - `roles` - Roles con acceso al canal
+  - `nuke` - Limpia completamente el canal
+- ⚠️ **Nuke** requiere permisos de administrador y elimina TODOS los mensajes
 
 #### `/bot`
-Bot information and statistics
-- **Subcommands:**
-  - `info` - General bot information
-  - `icon` - Bot icon
-- Includes server and user statistics, latency, and memory usage
+Información y estadísticas del bot
+- **Subcomandos:**
+  - `info` - Información general del bot
+  - `icon` - Icono del bot
+- Incluye estadísticas de servidores, usuarios, latencia y uso de memoria
 
-#### `/traducir [text] [target_language]`
-Translate text using Google Translate
-- Interactive modal for translating any text
-- Support for multiple languages (en, fr, de, it, etc.)
-- Auto-detection of source language
-- Instant and accurate translation
+#### `/traducir [texto] [idioma_destino]`
+Traducir texto usando Google Translate
+- Modal interactivo para traducir cualquier texto
+- Soporte para múltiples idiomas (en, fr, de, it, etc.)
+- Auto-detección del idioma fuente
+- Traducción instantánea y precisa
 
 #### `/seguir`
-Activate notifications for new posts
-- Follow YouTube, Twitter, Twitch, and Kick channels
-- Automatic notifications in your chosen channel
-- Keep your community updated
+Activar notificaciones para nuevas publicaciones
+- Sigue canales de YouTube, Twitter, Twitch y Kick
+- Notificaciones automáticas en tu canal elegido
+- Mantén a tu comunidad actualizada
 
 #### `/sugerir`
-Submit suggestions to the configured channel
-- Suggestion system with validation buttons
-- Automatic thread creation for discussion
-- Moderation by administrators
+Enviar sugerencias al canal configurado
+- Sistema de sugerencias con botones de validación
+- Creación automática de hilos para discusión
+- Moderación por administradores
 
-### Entertainment Commands
+### Comandos de Entretenimiento
 
-#### `/8ball [question]`
-Get mystical answers to your questions
-- Random responses
-- Fun and entertaining
-- Classic magic 8-ball experience
+#### `/8ball [pregunta]`
+Obtener respuestas místicas a tus preguntas
+- Respuestas aleatorias
+- Divertido y entretenido
+- Experiencia clásica de bola mágica 8
 
-#### `/ahorcado [difficulty]`
-Play hangman game
-- Multiple difficulty levels
-- Word categories
-- Interactive gameplay
+#### `/ahorcado [dificultad]`
+Jugar al ahorcado
+- Múltiples niveles de dificultad
+- Categorías de palabras
+- Jugabilidad interactiva
 
-#### `/chess [opponent]`
-Play chess with other users
-- Full chess implementation
-- Turn-based gameplay
-- Move validation
+#### `/chess [oponente]`
+Jugar ajedrez con otros usuarios
+- Implementación completa de ajedrez
+- Jugabilidad por turnos
+- Validación de movimientos
 
-#### `/osint [difficulty]`
-OSINT (Open Source Intelligence) game
-- Educational and fun
-- Multiple difficulty levels
-- Learn investigation techniques
+#### `/osint [dificultad]`
+Juego de OSINT (Inteligencia de Fuentes Abiertas)
+- Educativo y divertido
+- Múltiples niveles de dificultad
+- Aprender técnicas de investigación
 
-#### `/amor [user1] [user2]`
-Calculate love compatibility between users
-- Compatibility algorithm
-- Fun and detailed results
+#### `/amor [usuario1] [usuario2]`
+Calcular compatibilidad amorosa entre usuarios
+- Algoritmo de compatibilidad
+- Resultados divertidos y detallados
 
-#### `/abrazo [user]`
-Hug another user
-- Custom animations and messages
-- Fun social interaction
+#### `/abrazo [usuario]`
+Abrazar a otro usuario
+- Animaciones y mensajes personalizados
+- Interacción social divertida
 
-#### `/beso [user]`
-Kiss another user
-- Custom animations and messages
-- Fun social interaction
+#### `/beso [usuario]`
+Besar a otro usuario
+- Animaciones y mensajes personalizados
+- Interacción social divertida
 
-#### `/golpe [user]`
-Playfully hit another user
-- Custom animations and messages
-- Fun social interaction
+#### `/golpe [usuario]`
+Golpear juguetonamente a otro usuario
+- Animaciones y mensajes personalizados
+- Interacción social divertida
 
-#### `/howgay [user]`
-Fun gay percentage calculator
-- Random and fun results
-- No offensive intent
+#### `/howgay [usuario]`
+Calculadora divertida de porcentaje gay
+- Resultados aleatorios y divertidos
+- Sin intención ofensiva
 
 #### `/giveaway`
-Create and manage giveaways
-- Complete giveaway system
-- Prize and duration configuration
-- Automatic winner selection
+Crear y gestionar sorteos
+- Sistema completo de sorteos
+- Configuración de premios y duración
+- Selección automática de ganadores
 
-### Music Commands
+### Comandos de Música
 
-#### `/play [song/url]`
-Play music from various sources
-- YouTube, Spotify, SoundCloud support
-- Queue management
-- High-quality audio
+#### `/play [canción/url]`
+Reproducir música de varias fuentes
+- Soporte para YouTube, Spotify, SoundCloud
+- Gestión de cola
+- Audio de alta calidad
 
-#### `/search [term]`
-Search for songs on YouTube
-- Interactive results
-- Multiple song selection
+#### `/search [término]`
+Buscar canciones en YouTube
+- Resultados interactivos
+- Selección múltiple de canciones
 
 #### `/pause`
-Pause current playback
+Pausar la reproducción actual
 
 #### `/resume`
-Resume paused playback
+Reanudar la reproducción pausada
 
 #### `/stop`
-Stop playback and clear queue
+Detener reproducción y limpiar cola
 
 #### `/skip`
-Skip current song
+Saltar canción actual
 
 #### `/queue`
-Display current music queue
-- Song list with durations
-- Queue position indicators
-- Total queue time
+Mostrar cola de música actual
+- Lista de canciones con duraciones
+- Indicadores de posición en cola
+- Tiempo total de cola
 
 #### `/nowplaying`
-Display currently playing song
-- Song information and progress
-- Thumbnail and duration
-- Requester information
+Mostrar canción reproduciéndose actualmente
+- Información y progreso de la canción
+- Miniatura y duración
+- Información del solicitante
 
-#### `/volume [level]`
-Adjust playback volume (0-100)
+#### `/volume [nivel]`
+Ajustar volumen de reproducción (0-100)
 
 #### `/shuffle`
-Shuffle the queue
+Mezclar la cola
 
 #### `/loop`
-Toggle loop mode
+Alternar modo de bucle
 
 #### `/clear`
-Clear playback queue
+Limpiar cola de reproducción
 
-#### `/remove [position]`
-Remove specific song from queue
-
----
-
-## Security Systems
-
-### Anti-Links Protection (`/antilinks`)
-- Only the server owner can configure
-- Automatically sanctions users who send unauthorized links
-- Confirmation system to activate/deactivate
-
-### Anti-Bot Protection (`/antibot`)
-- Detects and prevents unauthorized bot entry
-- Automatic verification configuration
-
-### Anti-Ban Protection (`/antiban`)
-- Prevents mass banning of members
-- Automatic alerts to owner
-
-### Anti-Kick Protection (`/antikick`)
-- Prevents mass kicking of members
-- Automatic detection system
-
-### Anti-Channels Protection (`/antichannels`)
-- Prevents mass channel creation
-- Protection against raids
-
-### Anti-Role Protection (`/antirole`)
-- Prevents mass role creation
-- Protection against unauthorized modifications
-
-### Anti-Webhook Protection (`/antiwebhookcreate`, `/antiwebhookspam`)
-- Prevents unauthorized webhook creation
-- Protection against webhook spam
-
-### NSFW Filter (`/antinsfw`)
-- Detects and filters inappropriate content
-- Automatic configuration
-
-### Anti-Client Protection (`/anticlientapp`)
-- Detects modified client applications
-- Exploit prevention
-
-### Ghost Ping Detection (`/ghostping`)
-- Detects messages that are quickly deleted
-- Prevention of subtle harassment
-
-### Anti-Mass Role Protection (`/massrole`)
-- Prevents mass role assignment
-- Protection against unauthorized modifications
-
-### Security Status (`/estado`)
-- Shows status of all security systems
-- Detailed information for each protection
-
-### Owner Alerts (`/owneralerts`)
-- Special alert system for owner
-- Important event notifications
+#### `/remove [posición]`
+Remover canción específica de la cola
 
 ---
 
-## Setup Commands
+## Sistemas de Seguridad
+
+### Protección Anti-Enlaces (`/antilinks`)
+- Solo el propietario del servidor puede configurar
+- Sanciona automáticamente a usuarios que envíen enlaces no autorizados
+- Sistema de confirmación para activar/desactivar
+
+### Protección Anti-Bot (`/antibot`)
+- Detecta y previene la entrada de bots no autorizados
+- Configuración automática de verificación
+
+### Protección Anti-Ban (`/antiban`)
+- Previene baneos masivos de miembros
+- Alertas automáticas al propietario
+
+### Protección Anti-Kick (`/antikick`)
+- Previene expulsiones masivas de miembros
+- Sistema de detección automática
+
+### Protección Anti-Canales (`/antichannels`)
+- Previene la creación masiva de canales
+- Protección contra raids
+
+### Protección Anti-Roles (`/antirole`)
+- Previene la creación masiva de roles
+- Protección contra modificaciones no autorizadas
+
+### Protección Anti-Webhook (`/antiwebhookcreate`, `/antiwebhookspam`)
+- Previene la creación no autorizada de webhooks
+- Protección contra spam de webhooks
+
+### Filtro NSFW (`/antinsfw`)
+- Detecta y filtra contenido inapropiado
+- Configuración automática
+
+### Protección Anti-Client (`/anticlientapp`)
+- Detecta aplicaciones cliente modificadas
+- Prevención de exploits
+
+### Detección de Ghost Ping (`/ghostping`)
+- Detecta mensajes que son eliminados rápidamente
+- Prevención de acoso sutil
+
+### Protección Anti-Mass Role (`/massrole`)
+- Previene la asignación masiva de roles
+- Protección contra modificaciones no autorizadas
+
+### Estado de Seguridad (`/estado`)
+- Muestra el estado de todos los sistemas de seguridad
+- Información detallada de cada protección
+
+### Alertas del Propietario (`/owneralerts`)
+- Sistema de alertas especiales para el propietario
+- Notificaciones de eventos importantes
+
+---
+
+## Comandos de Configuración
 
 ### `/setup autoroles`
-Manage automatic roles
-- **`agregar`** - Add automatic role
-- **`eliminar`** - Remove automatic role
-- **`listar`** - List automatic roles
+Gestiona roles automáticos
+- **`agregar`** - Agregar rol automático
+- **`eliminar`** - Eliminar rol automático
+- **`listar`** - Listar roles automáticos
 
 ### `/setup logs`
-Activate or deactivate server logs
-- **`activar`** - Enable logging system
-- **`desactivar`** - Disable logging system
-- **`[channel]`** - Channel for logs (optional)
+Activa o desactiva los logs del servidor
+- **`activar`** - Habilitar sistema de logs
+- **`desactivar`** - Deshabilitar sistema de logs
+- **`[canal]`** - Canal para los logs (opcional)
 
 ### `/setup sugerencias`
-Configure suggestions channel
-- **`[channel]`** - Channel where suggestions will be sent
+Configura el canal de sugerencias
+- **`[canal]`** - Canal donde se enviarán las sugerencias
 
 ### `/setup reactionroles`
-Configure a reaction roles system
-- Interactive configuration system
-- Creation of messages with automatic reactions
+Configura un sistema de reaction roles
+- Sistema interactivo de configuración
+- Creación de mensajes con reacciones automáticas
 
 ### `/setup whitelist`
-Configure authorized users or roles
-- **`add`** - Add user/role to whitelist
-- **`remove`** - Remove user/role from whitelist
-- **`list`** - List users/roles in whitelist
+Configura usuarios o roles autorizados
+- **`add`** - Agregar usuario/rol a la whitelist
+- **`remove`** - Remover usuario/rol de la whitelist
+- **`list`** - Listar usuarios/roles en la whitelist
 
 ### `/setup badwords`
-Configure bad words filtering system
-- **`add`** - Add word to blacklist
-- **`remove`** - Remove word from blacklist
-- **`list`** - List words in blacklist
+Configura el sistema de filtrado de malas palabras
+- **`add`** - Agregar palabra a la lista negra
+- **`remove`** - Remover palabra de la lista negra
+- **`list`** - Listar palabras en la lista negra
 
 ### `/setup welcome`
-Configure welcome system
-- Redirects to web dashboard for advanced configuration
-- Custom messages and embeds
-- Role assignment options
+Configura el sistema de bienvenida
+- Redirige al dashboard web para configuración avanzada
+- Mensajes y embeds personalizados
+- Opciones de asignación de roles
 
 ---
 
-## Moderation Commands
+## Comandos de Moderación
 
-### `/ban [user]`
-Ban users from server
-- Interactive modal for reason, duration, and proof
-- Confirmation before execution
-- Automatic sanction logging
+### `/ban [usuario]`
+Banear usuarios del servidor
+- Modal interactivo para razón, duración y pruebas
+- Confirmación antes de ejecutar
+- Registro automático de sanciones
 
-### `/kick [user]`
-Kick users from server
-- Interactive modal for reason and proof
-- Confirmation before execution
-- Automatic sanction logging
+### `/kick [usuario]`
+Expulsar usuarios del servidor
+- Modal interactivo para razón y pruebas
+- Confirmación antes de ejecutar
+- Registro automático de sanciones
 
-### `/timeout [user]`
-Temporarily mute users
-- Duration configuration
-- Modal for reason and proof
-- Confirmation before execution
+### `/timeout [usuario]`
+Silenciar usuarios temporalmente
+- Configuración de duración
+- Modal para razón y pruebas
+- Confirmación antes de ejecutar
 
-### `/purge [amount]`
-Clear messages from channel
-- Mass message deletion
-- Filters by user or type
-- Confirmation before execution
+### `/purge [cantidad]`
+Limpiar mensajes del canal
+- Eliminación masiva de mensajes
+- Filtros por usuario o tipo
+- Confirmación antes de ejecutar
 
-### `/historial [user]`
-View sanction history
-- Complete list of sanctions
-- Detailed information for each case
-- Interactive navigation
+### `/historial [usuario]`
+Ver historial de sanciones
+- Lista completa de sanciones
+- Información detallada de cada caso
+- Navegación interactiva
 
 ### `/notas`
-Moderation notes system
-- Add notes about users
-- Consult existing notes
-- Moderation information management
+Sistema de notas de moderación
+- Agregar notas sobre usuarios
+- Consultar notas existentes
+- Gestión de información de moderación
 
 ---
 
-## Ticket System
+## Sistema de Tickets
 
 ### `/ticket create`
-Create a new ticket
-- Automatic channel creation system
-- Automatic permission configuration
-- Customized welcome message
+Crear un nuevo ticket
+- Sistema automático de creación de canales
+- Configuración de permisos automática
+- Mensaje de bienvenida personalizado
 
 ### `/ticket claim`
-Claim an existing ticket
-- For moderators and administrators
-- Responsibility assignment
+Reclamar un ticket existente
+- Para moderadores y administradores
+- Asignación de responsabilidad
 
-### `/ticket rename [name]`
-Rename current ticket
-- Channel name change
-- Change logging
+### `/ticket rename [nombre]`
+Renombrar el ticket actual
+- Cambio de nombre del canal
+- Registro de cambios
 
-### `/ticket adduser [user]`
-Add user to ticket
-- Give access to specific users
-- Permission management
+### `/ticket adduser [usuario]`
+Agregar usuario al ticket
+- Dar acceso a usuarios específicos
+- Gestión de permisos
 
-### `/ticket removeuser [user]`
-Remove user from ticket
-- Revoke user access
-- Permission management
+### `/ticket removeuser [usuario]`
+Remover usuario del ticket
+- Revocar acceso de usuarios
+- Gestión de permisos
 
 ### `/ticket done`
-Close ticket
-- Automatic channel closure
-- Transcript generation
-- Conversation archiving
+Cerrar el ticket
+- Cierre automático del canal
+- Generación de transcripción
+- Archivo de conversación
 
 ### `/ticket setup`
-Interactive ticket system configuration
-- Guided configuration flow
-- Role and permission configuration
-- Message customization
+Configuración interactiva del sistema de tickets
+- Flujo guiado de configuración
+- Configuración de roles y permisos
+- Personalización de mensajes
 
 ### `/ticket updatepanel`
-Update ticket panel
-- Automatic main panel update
-- Configuration synchronization
+Actualizar panel de tickets
+- Actualización automática del panel principal
+- Sincronización con configuración
 
-### `/ticket setlimit [limit]`
-Set ticket limit per user
-- Ticket spam control
-- Administrator configuration
+### `/ticket setlimit [límite]`
+Establecer límite de tickets por usuario
+- Control de spam de tickets
+- Configuración por administradores
 
 ---
 
-## Support
+## Soporte
 
 - **Dashboard:** [https://www.freewingsbot.com](https://www.freewingsbot.com)
-- **Support Server:** [https://discord.gg/Sp9GTrmcQG](https://discord.gg/Sp9GTrmcQG)
-- **Developer:** @diamondclass
-- **Organization:** Citymoon Dynamics
+- **Servidor de Soporte:** [https://discord.gg/Sp9GTrmcQG](https://discord.gg/Sp9GTrmcQG)
+- **Desarrollador:** @diamondclass
+- **Organización:** Citymoon Dynamics
 
-### Getting Help
-1. Use `/empezar` for interactive help
-2. Visit our support server for community assistance
-3. Check the dashboard for detailed configuration guides
-4. Contact the development team for technical issues
+### Obtener Ayuda
+1. Usa `/empezar` para ayuda interactiva
+2. Visita nuestro servidor de soporte para asistencia de la comunidad
+3. Revisa el dashboard para guías detalladas de configuración
+4. Contacta al equipo de desarrollo para problemas técnicos
 
 ---
 
-*Freewings Bot - Comprehensive Discord Server Management*
-*Developed with ❤️ by Citymoon Dynamics and @diamondclass*
+*Freewings Bot - Gestión Integral de Servidores de Discord*
+*Desarrollado con ❤️ por Citymoon Dynamics y @diamondclass*
