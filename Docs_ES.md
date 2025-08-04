@@ -1,18 +1,19 @@
-# Documentación en Español
+# Freewings Bot - Documentación en Español
 
 ## Tabla de Contenidos
-1. [Comenzando](#comenzando)
+1. [Primeros Pasos](#primeros-pasos)
 2. [Categorías de Comandos](#categorías-de-comandos)
 3. [Comandos Públicos](#comandos-públicos)
 4. [Sistemas de Seguridad](#sistemas-de-seguridad)
 5. [Comandos de Configuración](#comandos-de-configuración)
-6. [Soporte](#soporte)
+6. [Actualizaciones Recientes](#actualizaciones-recientes)
+7. [Soporte](#soporte)
 
 ---
 
-## Comenzando
+## Primeros Pasos
 
-Freewings es un bot de Discord integral desarrollado por [NearDevs](https://discord.gg/Sp9GTrmcQG) y **@diamondclass**. El bot proporciona funciones de seguridad, moderación, comunidad, entretenimiento y utilidades para servidores de Discord.
+Freewings es un bot integral de Discord desarrollado por [Citymoon Dynamics](https://discord.gg/Sp9GTrmcQG) y **@diamondclass**. El bot proporciona características de seguridad, moderación, comunidad, entretenimiento y utilidad para servidores de Discord.
 
 ### Inicio Rápido
 1. Usa `/empezar` para explorar todas las características disponibles
@@ -46,208 +47,225 @@ Freewings es un bot de Discord integral desarrollado por [NearDevs](https://disc
 - **`/golpe`** - Acción de golpe juguetón
 - **`/amor`** - Compatibilidad amorosa
 - **`/beso`** - Besar a alguien
-- **`/giveaway`** - Crear sorteos
 - **`/howgay`** - Calculadora divertida de porcentaje gay
+- **`/giveaway`** - Crear y gestionar sorteos
 
-### 🔩 Configuración
-- **`/setup`** - Configurar características del servidor (Solo Administrador)
+### 🎵 Música
+- **`/play`** - Reproducir música de varias fuentes
+- **`/pause`** - Pausar reproducción actual
+- **`/resume`** - Reanudar reproducción pausada
+- **`/stop`** - Detener reproducción y limpiar cola
+- **`/skip`** - Saltar canción actual
+- **`/queue`** - Mostrar cola actual
+- **`/nowplaying`** - Mostrar canción reproduciéndose actualmente
+- **`/volume`** - Ajustar volumen de reproducción
+- **`/shuffle`** - Mezclar la cola
+- **`/loop`** - Alternar modo de bucle
+
+### 🛡️ Seguridad
+- **`/antiraid`** - Sistema de protección anti-raid
+- **`/antispam`** - Protección anti-spam
+- **`/antilink`** - Sistema de filtrado de enlaces
+- **`/captcha`** - Sistema de verificación CAPTCHA
+- **`/automod`** - Moderación automática
+- **`/badwords`** - Filtro de malas palabras
+- **`/whitelist`** - Gestión de lista blanca
+- **`/blacklist`** - Gestión de lista negra
+- **`/verification`** - Sistema de verificación de usuarios
+- **`/autorole`** - Asignación automática de roles
+- **`/welcome`** - Sistema de mensajes de bienvenida
+- **`/goodbye`** - Sistema de mensajes de despedida
+- **`/logs`** - Sistema de registro del servidor
+- **`/backup`** - Respaldo y restauración del servidor
+
+### 🔨 Moderación
+- **`/ban`** - Banear usuarios
+- **`/unban`** - Desbanear usuarios
+- **`/kick`** - Expulsar usuarios
+- **`/timeout`** - Silenciar usuarios temporalmente
+- **`/warn`** - Advertir usuarios
+- **`/clear`** - Limpiar mensajes
+
+### 🎫 Tickets
+- **`/ticket create`** - Crear un nuevo ticket
+- **`/ticket claim`** - Reclamar un ticket existente
+- **`/ticket rename [nombre]`** - Renombrar el ticket actual
+- **`/ticket adduser [usuario]`** - Agregar usuario al ticket
+- **`/ticket removeuser [usuario]`** - Remover usuario del ticket
+- **`/ticket done`** - Cerrar el ticket
+- **`/ticket setup`** - Configuración interactiva del sistema de tickets
+- **`/ticket updatepanel`** - Actualizar panel de tickets
+- **`/ticket setlimit [límite]`** - Establecer límite de tickets por usuario
+
+### ⚙️ Configuración
+- **`/setup`** - Comando principal de configuración con varios subcomandos para configuración del servidor
+
+### 👥 Staff
+- **`/staff`** - Comandos de gestión de staff (acceso restringido)
 
 ---
 
 ## Comandos Públicos
 
-### `/empezar` - Comenzando
-**Descripción:** Guía interactiva para explorar todas las características de Freewings
-**Uso:** `/empezar`
-**Características:**
-- Sistema de menú interactivo
-- Exploración de comandos por categorías
-- Estadísticas del bot en tiempo real
-- Enlaces directos al dashboard
+### Comandos de Comunidad
 
-### `/user` - Información de Usuario
-**Descripción:** Información y gestión integral de usuarios
-**Subcomandos:**
-- **`info`** - Información completa del usuario incluyendo badges, fecha de ingreso, roles
-- **`avatar`** - Mostrar avatar del usuario en alta resolución
-- **`banner`** - Mostrar banner del usuario (si está disponible)
-- **`roles`** - Listar todos los roles del usuario en el servidor
-- **`permissions`** - Mostrar permisos clave del usuario
+#### `/user [usuario]`
+Mostrar información detallada del usuario
+- Perfil y estadísticas del usuario
+- Fechas de unión y actividad
+- Roles y permisos
 
-**Ejemplos de Uso:**
-```
-/user info @usuario
-/user avatar
-/user banner @usuario
-/user roles @usuario
-/user permissions @usuario
-```
+#### `/server`
+Mostrar información y estadísticas del servidor
+- Conteo de miembros y estado en línea
+- Fecha de creación del servidor
+- Nivel de boost y características
 
-### `/server` - Información del Servidor
-**Descripción:** Estadísticas e información del servidor
-**Subcomandos:**
-- **`info`** - Información general del servidor
-- **`stats`** - Estadísticas detalladas del servidor
-- **`icon`** - Icono del servidor
-- **`banner`** - Banner del servidor
-- **`boosts`** - Información de boosts
+#### `/channel [canal]`
+Mostrar información del canal
+- Tipo de canal y permisos
+- Fecha de creación y estadísticas
+- Información de acceso de miembros
 
-### `/channel` - Gestión de Canales
-**Descripción:** Información de canales y herramientas de gestión
-**Subcomandos:**
-- **`info`** - Información completa del canal
-- **`permissions`** - Resumen de permisos del canal
-- **`roles`** - Roles con acceso al canal
-- **`nuke`** - Limpiar todos los mensajes (Solo Administrador)
+#### `/bot`
+Mostrar información y estadísticas del bot
+- Tiempo de actividad y rendimiento
+- Conteo de servidores y usuarios
+- Versión y características
 
-### `/bot` - Información del Bot
-**Descripción:** Información técnica sobre Freewings
-**Subcomandos:**
-- **`info`** - Información general del bot incluyendo uptime, latencia, cantidad de servidores
-- **`icon`** - Avatar del bot
+#### `/traducir [texto] [idioma_destino]`
+Traducir texto usando Google Translate
+- Soporte para múltiples idiomas
+- Auto-detección del idioma fuente
+- Traducciones de alta calidad
 
-### `/traducir` - Traducción
-**Descripción:** Traducir texto usando Google Translate
-**Uso:** `/traducir`
-**Características:**
-- Interfaz modal interactiva
-- Soporte para múltiples idiomas (en, fr, de, it, etc.)
-- Resultados de traducción instantáneos
-- Manejo de errores para idiomas inválidos
+### Comandos de Entretenimiento
 
-### `/seguir` - Notificaciones de Redes Sociales
-**Descripción:** Seguir cuentas de redes sociales para notificaciones automáticas
-**Plataformas Soportadas:**
-- Canales de YouTube
-- Cuentas de Twitter
-- Streams de Twitch
-- Streams de Kick
-**Características:**
-- Notificaciones automáticas en el canal elegido
-- Actualizaciones en tiempo real
-- Soporte para múltiples plataformas
+#### `/8ball [pregunta]`
+Obtener respuestas místicas a tus preguntas
+- Respuestas aleatorias
+- Divertido y entretenido
+- Experiencia clásica de bola mágica 8
 
-### `/sugerir` - Sugerencias
-**Descripción:** Enviar sugerencias al canal de sugerencias configurado
-**Características:**
-- Creación automática de hilos para discusión
-- Botones de validación para administradores
-- Gestión organizada de sugerencias
+#### `/ahorcado [dificultad]`
+Jugar al ahorcado
+- Múltiples niveles de dificultad
+- Categorías de palabras
+- Jugabilidad interactiva
 
-### `/ahorcado` - Juego del Ahorcado
-**Descripción:** Juego clásico del ahorcado con extensa base de datos de palabras
-**Niveles de Dificultad:**
-- 🟢 **Fácil** - Hasta 6 letras
-- 🟡 **Medio** - 7-10 letras
-- 🔴 **Difícil** - Más de 10 letras
-- 🎲 **Aleatoria** - Cualquier dificultad
-
-**Características:**
-- 8 categorías: Tecnología, Programación, Ciencia, Naturaleza, Animales, Deportes, Cultura, Geografía, Alimentos
-- Visualización interactiva del alfabeto
-- Seguimiento de estadísticas (precisión, eficiencia, tiempo)
-- Adivinanza de palabras y letras
-- Progresión visual del ahorcado
-
-**Uso:** `/ahorcado [dificultad]`
-
-### `/chess` - Juego de Ajedrez
-**Descripción:** Jugar ajedrez con otros usuarios
-**Características:**
+#### `/chess [oponente]`
+Jugar ajedrez con otros usuarios
 - Implementación completa de ajedrez
-- Juego por turnos
+- Jugabilidad por turnos
 - Validación de movimientos
 
-### `/osint` - Juego OSINT
-**Descripción:** Juego de investigación de Inteligencia de Fuentes Abiertas
-**Características:**
-- Desafíos de investigación
-- Contenido educativo sobre técnicas OSINT
+#### `/osint [dificultad]`
+Juego de OSINT (Inteligencia de Fuentes Abiertas)
+- Educativo y divertido
+- Múltiples niveles de dificultad
+- Aprender técnicas de investigación
 
-### `/8ball` - Bola Mágica 8
-**Descripción:** Hazle una pregunta a la bola mágica 8
-**Uso:** `/8ball [pregunta]`
-**Características:**
-- 20 respuestas diferentes en español
-- Generación de respuestas aleatorias
-- Interacción divertida para tomar decisiones
+### Comandos de Música
 
-### Comandos de Diversión
-- **`/abrazo [usuario]`** - Enviar un abrazo a alguien
-- **`/golpe [usuario]`** - Acción de golpe juguetón
-- **`/amor [usuario1] [usuario2]`** - Calcular compatibilidad amorosa
-- **`/beso [usuario]`** - Enviar un beso a alguien
-- **`/howgay [usuario]`** - Calculadora divertida de porcentaje gay
-- **`/giveaway`** - Crear y gestionar sorteos
+#### `/play [canción/url]`
+Reproducir música de varias fuentes
+- Soporte para YouTube, Spotify, SoundCloud
+- Gestión de cola
+- Audio de alta calidad
+
+#### `/nowplaying`
+Mostrar canción reproduciéndose actualmente
+- Información y progreso de la canción
+- Miniatura y duración
+- Información del solicitante
+
+#### `/queue`
+Mostrar cola de música actual
+- Lista de canciones con duraciones
+- Indicadores de posición en cola
+- Tiempo total de cola
 
 ---
 
 ## Sistemas de Seguridad
 
-Freewings incluye características de seguridad integrales (configuradas vía `/setup` o dashboard):
+### Protección Anti-Raid
+Protección integral contra raids del servidor
+- Detección de uniones masivas
+- Acciones de moderación automática
+- Umbrales configurables
 
-### Sistemas Anti-Spam
-- **Protección anti-ban** - Previene baneos masivos
-- **Protección anti-bot** - Bloquea adiciones sospechosas de bots
-- **Anti-spam de canales** - Previene spam de creación/eliminación de canales
-- **Anti-spam de roles** - Protege contra manipulación de roles
-- **Anti-spam de webhooks** - Previene abuso de webhooks
-- **Protección anti-kick** - Bloquea expulsiones masivas
-- **Anti-NSFW** - Filtrado de contenido
-- **Anti-enlaces** - Filtrado y protección de enlaces
-- **Detección de ghost ping** - Detecta y registra ghost pings
+### Sistema Anti-Spam
+Detección y prevención avanzada de spam
+- Análisis de frecuencia de mensajes
+- Detección de mensajes duplicados
+- Castigos automáticos
 
-### Sistemas de Monitoreo
-- **Permisos de audit log** - Rastrear cambios de permisos
-- **Alertas del propietario** - Notificar a propietarios del servidor sobre actividad sospechosa
-- **Detección de roles masivos** - Monitorear cambios masivos de roles
-- **Monitoreo de aplicaciones cliente** - Rastrear uso de aplicaciones
+### Verificación CAPTCHA
+Sistema de verificación humana
+- Desafíos basados en imágenes
+- Asignación automática de roles
+- Prevención de detección de bots
+
+### Gestión de Lista Blanca/Negra
+Control de acceso de usuarios y roles
+- Lista blanca para usuarios confiables
+- Lista negra para usuarios problemáticos
+- Sistema de permisos flexible
 
 ---
 
 ## Comandos de Configuración
 
-### `/setup` - Configuración del Servidor
-**Permiso Requerido:** Administrador
+### `/setup antiraid`
+Configurar protección anti-raid
+- **`activar`** - Habilitar sistema anti-raid
+- **`desactivar`** - Deshabilitar sistema anti-raid
+- **`configurar`** - Configuración interactiva
 
-**Subcomandos:**
+### `/setup antispam`
+Configurar protección anti-spam
+- **`activar`** - Habilitar sistema anti-spam
+- **`desactivar`** - Deshabilitar sistema anti-spam
+- **`configurar`** - Establecer umbrales de spam
 
-#### `/setup autoroles`
-Configurar asignación automática de roles para nuevos miembros
-- **`agregar [rol]`** - Agregar rol a la lista de auto-asignación
-- **`eliminar [rol]`** - Remover rol de la lista de auto-asignación
-- **`listar`** - Listar todos los auto-roles configurados
+### `/setup captcha`
+Configurar verificación CAPTCHA
+- **`activar [canal]`** - Habilitar CAPTCHA en canal especificado
+- **`desactivar`** - Deshabilitar sistema CAPTCHA
 
-#### `/setup logs`
-Configurar sistema de registro del servidor
-- **`activar [canal]`** - Habilitar logs en el canal especificado
-- **`desactivar`** - Deshabilitar sistema de registro
-- Selección interactiva de eventos (eventos de canal, eventos de rol, eventos de miembro, eventos de mensaje, eventos de webhook)
+### `/setup logs`
+Configurar registro del servidor
+- **`[canal]`** - Establecer canal de registro
+- Registro integral de eventos
+- Seguimiento de acciones de moderación
 
-#### `/setup sugerencias`
+### `/setup welcome`
+Configurar sistema de bienvenida
+- Redirige al dashboard web
+- Mensajes y embeds personalizados
+- Opciones de asignación de roles
+
+### `/setup sugerencias`
 Configurar sistema de sugerencias
-- **`[canal]`** - Establecer canal para sugerencias
+- **`[canal]`** - Establecer canal de sugerencias
+- Sistema de reacciones automático
+- Recopilación de comentarios de la comunidad
 
-#### `/setup reactionroles`
-Crear sistemas de reaction roles
-- Creación interactiva de embeds
-- Título, descripción y color personalizados
-- Asignación de roles vía reacciones
+## Soporte
 
-#### `/setup whitelist`
-Gestionar usuarios y roles autorizados
-- **`add user/role [objetivo]`** - Agregar a whitelist (Solo Propietario)
-- **`remove user/role [objetivo]`** - Remover de whitelist (Solo Propietario)
-- **`list user/role [página]`** - Listar elementos en whitelist
+- **Dashboard:** [https://www.freewingsbot.com](https://www.freewingsbot.com)
+- **Servidor de Soporte:** [https://discord.gg/Sp9GTrmcQG](https://discord.gg/Sp9GTrmcQG)
+- **Desarrollador:** @diamondclass
+- **Organización:** Citymoon Dynamics
 
-#### `/setup badwords`
-Gestionar filtro de malas palabras
-- **`activar`** - Habilitar filtro de malas palabras
-- **`desactivar`** - Deshabilitar filtro de malas palabras
-- **`agregar [palabra]`** - Agregar palabra a lista negra
-- **`quitar [palabra]`** - Remover palabra de lista negra
-- **`listar`** - Listar todas las palabras en lista negra
+### Obtener Ayuda
+1. Usa `/empezar` para ayuda interactiva
+2. Visita nuestro servidor de soporte para asistencia de la comunidad
+3. Revisa el dashboard para guías detalladas de configuración
+4. Contacta al equipo de desarrollo para problemas técnicos
 
-#### `/setup welcome`
-Configurar sistema de bienvenida (Solo Dashboard)
-- Redirige al dashboard web para configuración
+---
+
+*Freewings Bot - Gestión Integral de Servidores de Discord*
+*Desarrollado con ❤️ por Citymoon Dynamics y @diamondclass*
