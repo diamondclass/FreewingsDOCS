@@ -34,6 +34,8 @@ Freewings es un bot integral de Discord desarrollado por [Citymoon Dynamics](htt
 - **`/traducir`** - Integración con Google Translate
 - **`/seguir`** - Seguir cuentas de redes sociales para notificaciones
 - **`/sugerir`** - Enviar sugerencias al canal configurado
+- **`/recordatorio`** - Sistema de recordatorios personales por MD
+- **`/nivel`** - Sistema de niveles y XP con leaderboards
 
 ### 🎮 Minijuegos
 - **`/ahorcado`** - Juego del ahorcado con múltiples niveles de dificultad
@@ -64,7 +66,9 @@ Freewings es un bot integral de Discord desarrollado por [Citymoon Dynamics](htt
 - **`/remove`** - Remover canción específica de la cola
 
 ### 🛡️ Seguridad
-- **`/antilinks`** - Sistema de protección anti-enlaces
+- **`/antilinks`** - Sistema avanzado de protección anti-enlaces
+- **`/filescan`** - Escaneo de archivos con VirusTotal
+- **`/securitylogs`** - Historial de violaciones de seguridad
 - **`/antibot`** - Protección contra bots no autorizados
 - **`/antiban`** - Protección contra baneos masivos
 - **`/antikick`** - Protección contra expulsiones masivas
@@ -161,6 +165,32 @@ Enviar sugerencias al canal configurado
 - Sistema de sugerencias con botones de validación
 - Creación automática de hilos para discusión
 - Moderación por administradores
+
+#### `/recordatorio`
+Sistema de recordatorios personales
+- **Uso básico:** `/recordatorio mensaje:"Recordar reunión" fecha:"2024-12-25 15:30"`
+- **Subcomandos:**
+  - `listar` - Mostrar recordatorios activos
+  - `eliminar` - Eliminar recordatorio específico
+- **Características:**
+  - Notificaciones por MD automáticas
+  - Múltiples formatos de fecha soportados
+  - Gestión personal de recordatorios
+  - Verificación automática cada minuto
+
+#### `/nivel`
+Sistema completo de niveles y XP
+- **Subcomandos:**
+  - `perfil [usuario]` - Ver perfil de nivel personal o de otro usuario
+  - `leaderboard [página]` - Ranking del servidor con paginación
+  - `global [página]` - Ranking global entre todos los servidores
+  - `config` - Configuración del sistema (solo administradores)
+- **Características:**
+  - XP automático por mensajes y tiempo en voz
+  - Sistema de logros desbloqueables
+  - Mensajes de subida de nivel personalizables
+  - Cooldown configurable entre mensajes
+  - Estadísticas detalladas de actividad
 
 ### Comandos de Entretenimiento
 
@@ -275,10 +305,61 @@ Remover canción específica de la cola
 
 ## Sistemas de Seguridad
 
-### Protección Anti-Enlaces (`/antilinks`)
-- Solo el propietario del servidor puede configurar
-- Sanciona automáticamente a usuarios que envíen enlaces no autorizados
-- Sistema de confirmación para activar/desactivar
+### Sistema Anti-Enlaces Avanzado (`/antilinks`)
+**Nuevas características:**
+- **Configuración flexible:** Permite enlaces de Discord, imágenes y videos
+- **Lista blanca personalizable:** Dominios permitidos por servidor
+- **Modo estricto:** Bloqueo total de enlaces no autorizados
+- **Análisis de seguridad:** Verificación automática de URLs sospechosas
+- **Límite configurable:** Máximo de enlaces por mensaje
+- **Subcomandos:**
+  - `toggle` - Activar/desactivar sistema
+  - `whitelist` - Gestionar dominios permitidos
+  - `config` - Configuración avanzada
+
+### Escaneo de Archivos (`/filescan`)
+**Nuevo sistema de seguridad:**
+- **Integración con VirusTotal:** Análisis completo de archivos
+- **Configuración de API:** Subcomando para configurar API key
+- **Múltiples formatos:** Soporte para archivos adjuntos y URLs
+- **Análisis detallado:** Estadísticas de detección y recomendaciones
+- **Límite de tamaño:** Hasta 32MB por archivo
+- **Verificación por hash:** Para archivos ya analizados
+- **Subcomandos:**
+  - `config` - Configurar API key de VirusTotal
+  - Uso directo con archivo adjunto o URL
+
+### Historial de Seguridad (`/securitylogs`)
+**Nuevo sistema de monitoreo:**
+- **Seguimiento completo:** Todas las violaciones de seguridad
+- **Estadísticas detalladas:** Por usuario y tipo de violación
+- **Escalación automática:** 4 niveles de severidad
+- **Subcomandos:**
+  - `usuario` - Ver historial de usuario específico
+  - `servidor` - Estadísticas generales del servidor
+  - `limpiar` - Eliminar registros antiguos
+
+### Sistema de Niveles y XP (`/nivel`)
+**Nuevo sistema de gamificación:**
+- **XP automático:** Por mensajes y tiempo en voz
+- **Sistema de niveles:** Progresión exponencial
+- **Leaderboards:** Por servidor y global
+- **Logros desbloqueables:** Por actividad y niveles
+- **Configuración flexible:** XP, cooldowns, mensajes
+- **Subcomandos:**
+  - `perfil` - Ver estadísticas personales
+  - `leaderboard` - Ranking del servidor
+  - `global` - Ranking global
+  - `config` - Configuración del sistema
+
+### Sistema Antispam Mejorado
+**Características avanzadas:**
+- **Rate limiting:** 5 mensajes en 10 segundos
+- **Detección de patrones:** Spam, caracteres repetidos, mayúsculas
+- **Análisis de contenido:** NSFW, toxicidad, enlaces sospechosos
+- **Escalación automática:** 4 niveles de severidad (MINOR, MODERATE, SEVERE, EXTREME)
+- **Timeouts automáticos:** Desde 5 minutos hasta 7 días
+- **Logs detallados:** Registro completo en canal mod-logs
 
 ### Protección Anti-Bot (`/antibot`)
 - Detecta y previene la entrada de bots no autorizados
@@ -418,7 +499,7 @@ Sistema de notas de moderación
 ### `/ticket create`
 Crear un nuevo ticket
 - Sistema automático de creación de canales
-- Configuración de permisos automática
+- Configuración automática de permisos
 - Mensaje de bienvenida personalizado
 
 ### `/ticket claim`
