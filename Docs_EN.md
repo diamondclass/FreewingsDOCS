@@ -5,7 +5,7 @@
 2. [Command Categories](#command-categories)
 3. [Public Commands](#public-commands)
 4. [Security Systems](#security-systems)
-5. [Setup Commands](#setup-commands)
+5. [Configuration Commands](#configuration-commands)
 6. [Support](#support)
 
 ---
@@ -33,15 +33,17 @@ Freewings is a comprehensive Discord bot developed by [Citymoon Dynamics](https:
 - **`/bot`** - Bot information and statistics
 - **`/traducir`** - Google Translate integration
 - **`/seguir`** - Follow social media accounts for notifications
-- **`/sugerir`** - Submit suggestions to the configured channel
+- **`/sugerir`** - Send suggestions to configured channel
+- **`/recordatorio`** - Personal reminder system via DM
+- **`/nivel`** - Level and XP system with leaderboards
 
-### 🎮 Mini-games
+### 🎮 Minigames
 - **`/ahorcado`** - Hangman game with multiple difficulty levels
 - **`/chess`** - Chess game
 - **`/osint`** - OSINT (Open Source Intelligence) game
 
 ### 🙈 Fun
-- **`/8ball`** - Magic 8-ball responses
+- **`/8ball`** - Magic 8 ball responses
 - **`/abrazo`** - Hug someone
 - **`/golpe`** - Playful hit action
 - **`/amor`** - Love compatibility
@@ -55,7 +57,7 @@ Freewings is a comprehensive Discord bot developed by [Citymoon Dynamics](https:
 - **`/resume`** - Resume paused playback
 - **`/stop`** - Stop playback and clear queue
 - **`/skip`** - Skip current song
-- **`/queue`** - Display current queue
+- **`/queue`** - Show current queue
 - **`/nowplaying`** - Show currently playing song
 - **`/volume`** - Adjust playback volume
 - **`/shuffle`** - Shuffle the queue
@@ -64,7 +66,9 @@ Freewings is a comprehensive Discord bot developed by [Citymoon Dynamics](https:
 - **`/remove`** - Remove specific song from queue
 
 ### 🛡️ Security
-- **`/antilinks`** - Anti-links protection system
+- **`/antilinks`** - Advanced anti-links protection system
+- **`/filescan`** - File scanning with VirusTotal
+- **`/securitylogs`** - Security violation history
 - **`/antibot`** - Protection against unauthorized bots
 - **`/antiban`** - Protection against mass bans
 - **`/antikick`** - Protection against mass kicks
@@ -77,20 +81,20 @@ Freewings is a comprehensive Discord bot developed by [Citymoon Dynamics](https:
 - **`/ghostping`** - Ghost ping detection
 - **`/massrole`** - Protection against mass role assignment
 - **`/estado`** - Status of all security systems
-- **`/owneralerts`** - Owner alerts system
+- **`/owneralerts`** - Alerts for server owner
 
 ### 🔨 Moderation
 - **`/ban`** - Ban users
 - **`/kick`** - Kick users
-- **`/timeout`** - Timeout users
-- **`/purge`** - Clear messages
+- **`/timeout`** - Temporarily mute users
+- **`/purge`** - Clean messages
 - **`/historial`** - View sanction history
 - **`/notas`** - Moderation notes system
 
 ### 🎫 Tickets
 - **`/ticket create`** - Create a new ticket
 - **`/ticket claim`** - Claim an existing ticket
-- **`/ticket rename [name]`** - Rename the current ticket
+- **`/ticket rename [name]`** - Rename current ticket
 - **`/ticket adduser [user]`** - Add user to ticket
 - **`/ticket removeuser [user]`** - Remove user from ticket
 - **`/ticket done`** - Close the ticket
@@ -98,8 +102,8 @@ Freewings is a comprehensive Discord bot developed by [Citymoon Dynamics](https:
 - **`/ticket updatepanel`** - Update ticket panel
 - **`/ticket setlimit [limit]`** - Set ticket limit per user
 
-### ⚙️ Setup
-- **`/setup`** - Main setup command with various subcommands for server configuration
+### ⚙️ Configuration
+- **`/setup`** - Main configuration command with various subcommands for server configuration
 
 ---
 
@@ -141,11 +145,11 @@ Bot information and statistics
 - **Subcommands:**
   - `info` - General bot information
   - `icon` - Bot icon
-- Includes server and user statistics, latency, and memory usage
+- Includes server statistics, users, latency, and memory usage
 
 #### `/traducir [text] [target_language]`
 Translate text using Google Translate
-- Interactive modal for translating any text
+- Interactive modal to translate any text
 - Support for multiple languages (en, fr, de, it, etc.)
 - Auto-detection of source language
 - Instant and accurate translation
@@ -157,10 +161,36 @@ Activate notifications for new posts
 - Keep your community updated
 
 #### `/sugerir`
-Submit suggestions to the configured channel
+Send suggestions to configured channel
 - Suggestion system with validation buttons
 - Automatic thread creation for discussion
 - Moderation by administrators
+
+#### `/recordatorio`
+Personal reminder system
+- **Basic usage:** `/recordatorio mensaje:"Remember meeting" fecha:"2024-12-25 15:30"`
+- **Subcommands:**
+  - `listar` - Show active reminders
+  - `eliminar` - Delete specific reminder
+- **Features:**
+  - Automatic DM notifications
+  - Multiple supported date formats
+  - Personal reminder management
+  - Automatic verification every minute
+
+#### `/nivel`
+Complete level and XP system
+- **Subcommands:**
+  - `perfil [user]` - View personal level profile or another user's
+  - `leaderboard [page]` - Server ranking with pagination
+  - `global [page]` - Global ranking across all servers
+  - `config` - System configuration (administrators only)
+- **Features:**
+  - Automatic XP from messages and voice time
+  - Unlockable achievement system
+  - Customizable level-up messages
+  - Configurable cooldown between messages
+  - Detailed activity statistics
 
 ### Entertainment Commands
 
@@ -168,17 +198,17 @@ Submit suggestions to the configured channel
 Get mystical answers to your questions
 - Random responses
 - Fun and entertaining
-- Classic magic 8-ball experience
+- Classic magic 8 ball experience
 
 #### `/ahorcado [difficulty]`
-Play hangman game
+Play hangman
 - Multiple difficulty levels
 - Word categories
 - Interactive gameplay
 
 #### `/chess [opponent]`
 Play chess with other users
-- Full chess implementation
+- Complete chess implementation
 - Turn-based gameplay
 - Move validation
 
@@ -223,12 +253,12 @@ Create and manage giveaways
 
 #### `/play [song/url]`
 Play music from various sources
-- YouTube, Spotify, SoundCloud support
+- Support for YouTube, Spotify, SoundCloud
 - Queue management
 - High-quality audio
 
 #### `/search [term]`
-Search for songs on YouTube
+Search songs on YouTube
 - Interactive results
 - Multiple song selection
 
@@ -245,13 +275,13 @@ Stop playback and clear queue
 Skip current song
 
 #### `/queue`
-Display current music queue
+Show current music queue
 - Song list with durations
 - Queue position indicators
 - Total queue time
 
 #### `/nowplaying`
-Display currently playing song
+Show currently playing song
 - Song information and progress
 - Thumbnail and duration
 - Requester information
@@ -275,24 +305,75 @@ Remove specific song from queue
 
 ## Security Systems
 
-### Anti-Links Protection (`/antilinks`)
-- Only the server owner can configure
-- Automatically sanctions users who send unauthorized links
-- Confirmation system to activate/deactivate
+### Advanced Anti-Links System (`/antilinks`)
+**New features:**
+- **Flexible configuration:** Allows Discord links, images, and videos
+- **Customizable whitelist:** Allowed domains per server
+- **Strict mode:** Total blocking of unauthorized links
+- **Security analysis:** Automatic verification of suspicious URLs
+- **Configurable limit:** Maximum links per message
+- **Subcommands:**
+  - `toggle` - Enable/disable system
+  - `whitelist` - Manage allowed domains
+  - `config` - Advanced configuration
+
+### File Scanning (`/filescan`)
+**New security system:**
+- **VirusTotal integration:** Complete file analysis
+- **API configuration:** Subcommand to configure API key
+- **Multiple formats:** Support for attachments and URLs
+- **Detailed analysis:** Detection statistics and recommendations
+- **Size limit:** Up to 32MB per file
+- **Hash verification:** For already analyzed files
+- **Subcommands:**
+  - `config` - Configure VirusTotal API key
+  - Direct use with file attachment or URL
+
+### Security History (`/securitylogs`)
+**New monitoring system:**
+- **Complete tracking:** All security violations
+- **Detailed statistics:** By user and violation type
+- **Automatic escalation:** 4 severity levels
+- **Subcommands:**
+  - `usuario` - View specific user history
+  - `servidor` - General server statistics
+  - `limpiar` - Delete old records
+
+### Level and XP System (`/nivel`)
+**New gamification system:**
+- **Automatic XP:** From messages and voice time
+- **Level system:** Exponential progression
+- **Leaderboards:** Server and global
+- **Unlockable achievements:** By activity and levels
+- **Flexible configuration:** XP, cooldowns, messages
+- **Subcommands:**
+  - `perfil` - View personal statistics
+  - `leaderboard` - Server ranking
+  - `global` - Global ranking
+  - `config` - System configuration
+
+### Enhanced Anti-Spam System
+**Advanced features:**
+- **Rate limiting:** 5 messages in 10 seconds
+- **Pattern detection:** Spam, repeated characters, caps
+- **Content analysis:** NSFW, toxicity, suspicious links
+- **Automatic escalation:** 4 severity levels (MINOR, MODERATE, SEVERE, EXTREME)
+- **Automatic timeouts:** From 5 minutes to 7 days
+- **Detailed logs:** Complete recording in mod-logs channel
 
 ### Anti-Bot Protection (`/antibot`)
 - Detects and prevents unauthorized bot entry
 - Automatic verification configuration
 
 ### Anti-Ban Protection (`/antiban`)
-- Prevents mass banning of members
-- Automatic alerts to owner
+- Prevents mass member bans
+- Automatic owner alerts
 
 ### Anti-Kick Protection (`/antikick`)
-- Prevents mass kicking of members
+- Prevents mass member kicks
 - Automatic detection system
 
-### Anti-Channels Protection (`/antichannels`)
+### Anti-Channel Protection (`/antichannels`)
 - Prevents mass channel creation
 - Protection against raids
 
@@ -313,7 +394,7 @@ Remove specific song from queue
 - Exploit prevention
 
 ### Ghost Ping Detection (`/ghostping`)
-- Detects messages that are quickly deleted
+- Detects quickly deleted messages
 - Prevention of subtle harassment
 
 ### Anti-Mass Role Protection (`/massrole`)
@@ -330,7 +411,7 @@ Remove specific song from queue
 
 ---
 
-## Setup Commands
+## Configuration Commands
 
 ### `/setup autoroles`
 Manage automatic roles
@@ -351,7 +432,7 @@ Configure suggestions channel
 ### `/setup reactionroles`
 Configure a reaction roles system
 - Interactive configuration system
-- Creation of messages with automatic reactions
+- Automatic reaction message creation
 
 ### `/setup whitelist`
 Configure authorized users or roles
@@ -377,31 +458,31 @@ Configure welcome system
 
 ### `/ban [user]`
 Ban users from server
-- Interactive modal for reason, duration, and proof
+- Interactive modal for reason, duration, and evidence
 - Confirmation before execution
 - Automatic sanction logging
 
 ### `/kick [user]`
 Kick users from server
-- Interactive modal for reason and proof
+- Interactive modal for reason and evidence
 - Confirmation before execution
 - Automatic sanction logging
 
 ### `/timeout [user]`
 Temporarily mute users
 - Duration configuration
-- Modal for reason and proof
+- Modal for reason and evidence
 - Confirmation before execution
 
 ### `/purge [amount]`
-Clear messages from channel
+Clean channel messages
 - Mass message deletion
-- Filters by user or type
+- User or type filters
 - Confirmation before execution
 
 ### `/historial [user]`
 View sanction history
-- Complete list of sanctions
+- Complete sanction list
 - Detailed information for each case
 - Interactive navigation
 
@@ -442,7 +523,7 @@ Remove user from ticket
 - Permission management
 
 ### `/ticket done`
-Close ticket
+Close the ticket
 - Automatic channel closure
 - Transcript generation
 - Conversation archiving
