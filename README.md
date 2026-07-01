@@ -1,14 +1,14 @@
 # Freewings Discord Bot
 
 [![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/Sp9GTrmcQG)
-[![Website](https://img.shields.io/badge/Website-FF6B6B?style=for-the-badge&logo=web&logoColor=white)](https://www.freewingsbot.com)
+[![Website](https://img.shields.io/badge/Website-FF6B6B?style=for-the-badge&logo=web&logoColor=white)](https://freewings.citymoon.es)
 
-**Freewings** is a comprehensive Discord bot developed by [NearDevs](https://discord.gg/Sp9GTrmcQG) and **@diamondclass**. It provides security, moderation, community, entertainment, and utility features for Discord servers.
+**Freewings** is a comprehensive Discord bot developed by [Citymoon Dynamics](https://citymoon.es) and **@diamondclass**. It provides security, moderation, community, entertainment, and utility features for Discord servers.
 
 ## 🚀 Quick Start
 
 1. **Get Started**: Use `/empezar` to explore all available features
-2. **Dashboard**: Visit [freewingsbot.com](https://www.freewingsbot.com) for advanced configuration
+2. **Dashboard**: Visit [freewingsbot.com](https://freewings.citymoon.es) for advanced configuration
 3. **Setup**: Use `/setup` commands to configure server features (requires Administrator permissions)
 
 ## 📋 Command Categories
