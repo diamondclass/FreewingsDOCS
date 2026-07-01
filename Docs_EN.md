@@ -12,11 +12,11 @@
 
 ## Getting Started
 
-Freewings is a comprehensive Discord bot developed by [Citymoon Dynamics](https://discord.gg/Sp9GTrmcQG) and **@diamondclass**. The bot provides security, moderation, community, entertainment, and utility features for Discord servers.
+Freewings is a comprehensive Discord bot developed by [Citymoon Dynamics](https://citymoon.es) and **@diamondclass**. The bot provides security, moderation, community, entertainment, and utility features for Discord servers.
 
 ### Quick Start
 1. Use `/empezar` to explore all available features
-2. Visit the [Dashboard](https://www.freewingsbot.com) for advanced configuration
+2. Visit the [Dashboard](https://freewings.citymoon.es) for advanced configuration
 3. Use `/setup` commands to configure server features (requires Administrator permissions)
 
 ---
