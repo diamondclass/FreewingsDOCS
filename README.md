@@ -8,7 +8,7 @@
 ## 🚀 Quick Start
 
 1. **Get Started**: Use `/empezar` to explore all available features
-2. **Dashboard**: Visit [freewingsbot.com](https://freewings.citymoon.es) for advanced configuration
+2. **Dashboard**: Visit [freewings.citymoon.org](https://freewings.citymoon.es) for advanced configuration
 3. **Setup**: Use `/setup` commands to configure server features (requires Administrator permissions)
 
 ## 📋 Command Categories
@@ -78,13 +78,14 @@ The full documentation includes:
 
 ## 🌐 Links
 
-- **Dashboard**: [https://www.freewingsbot.com](https://www.freewingsbot.com)
-- **Developer Community**: [NearDevs Discord](https://discord.gg/Sp9GTrmcQG)
+- **Dashboard**: [https://freewings.citymoon.org](https://freewings.citymoon.org)
+- **Developer Community**: [Citymoon Dynamics Discord](https://discord.gg/YBup9nD4Jm)
 - **Main Developer**: @diamondclass
 
 ## 📄 License
 
-Freewings © 2025 - All rights reserved
+Freewings © 2025-2026 - All rights reserved
+Developed by Citymoon Dynamics - citymoon.org - "A Symbol of Quality"
 
 ---
 
